@@ -1,6 +1,39 @@
 {
   "story": {
-    "prologue": "Alkisah, di sebuah negeri yang luas dan makmur, berdirilah Kerajaan Caldoria. Kerajaan ini terkenal akan kedamaiannya yang abadi, di mana setiap sudut kota dan desa berselimut ketenteraman. Rakyat hidup sejahtera, hasil bumi melimpah, dan pasar-pasar dipenuhi pedagang yang datang dari negeri jauh. Keadaan politik kerajaan sangatlah stabil, berkat aliansi kuat dengan kerajaan-kerajaan tetangga yang selama ini menjadi mitra dagang sekaligus pelindung tak resmi. Namun, di balik kedamaian itu, terdapat kelemahan yang tak terlihat oleh banyak mata—militer Caldoria terlampau lemah. Mereka bergantung sepenuhnya pada hubungan dagang dan aliansi diplomatik untuk melindungi tanah mereka.",
+    "prologue": [
+      {
+        "id": 1,
+        "story": "Alkisah, di sebuah negeri yang luas dan makmur, berdirilah Kerajaan Caldoria. Kerajaan ini terkenal akan kedamaiannya yang abadi, di mana setiap sudut kota dan desa berselimut ketenteraman. Rakyat hidup sejahtera, hasil bumi melimpah, dan pasar-pasar dipenuhi pedagang yang datang dari negeri jauh. Keadaan politik kerajaan sangatlah stabil, berkat aliansi kuat dengan kerajaan-kerajaan tetangga yang selama ini menjadi mitra dagang sekaligus pelindung tak resmi. Namun, di balik kedamaian itu, terdapat kelemahan yang tak terlihat oleh banyak mata—militer Caldoria terlampau lemah. Mereka bergantung sepenuhnya pada hubungan dagang dan aliansi diplomatik untuk melindungi tanah mereka."
+      },
+
+      {
+        "id": 2,
+        "story": "Di bawah pimpinan Raja Caldoria yang bijaksana, rakyat yakin bahwa kedamaian ini akan bertahan selamanya. Namun, kedamaian tersebut mulai terguncang ketika kabar mengerikan datang dari pelosok negeri. Dari dasar bumi yang tak tersentuh selama berabad-abad, bangkitlah dungeon-dungeon kuno—penjara bagi makhluk-makhluk kegelapan yang terlupakan oleh sejarah. Satu per satu, pintu-pintu dungeon terbuka, dan dari dalamnya, keluar makhluk-makhluk buas yang segera menebar teror di antara rakyat. Desa-desa hancur, ladang-ladang dirusak, dan kota-kota kecil mulai merasakan ketakutan yang belum pernah mereka kenal sebelumnya."
+      },
+
+      {
+        "id": 3,
+        "story": "Raja segera mengirim utusan untuk meminta bantuan dari kerajaan tetangga. Namun, malang tak dapat ditolak—kerajaan-kerajaan lain pun tengah sibuk menghadapi ancaman yang sama. Munculnya dungeon tak hanya menimpa Caldoria, melainkan seluruh dunia. Setiap kerajaan kini terjebak dalam perjuangan mereka masing-masing, menghadapi gelombang serangan dari monster-monster yang muncul dari perut bumi. Raja yang biasanya tenang kini mulai dirundung kegelisahan. Ia tahu, tanpa bantuan dari kerajaan tetangga, Caldoria tak mungkin bertahan lama."
+      },
+
+      {
+        "id": 4,
+        "story": "Waktu terus berjalan, dan semakin banyak rakyat yang menjadi korban. Para prajurit kerajaan, yang jumlahnya sedikit dan kurang terlatih, tak mampu melindungi seluruh penjuru negeri. Harapan seolah menghilang dari langit Caldoria yang kini tampak suram."
+      },
+
+      {
+        "id": 5,
+        "story": "Namun, pada suatu hari yang dingin, ketika kabut pagi belum sepenuhnya terangkat dari tanah, muncullah seorang pemuda di hadapan gerbang istana. Ia tak dikenal oleh siapa pun, bahkan namanya pun tak tercatat dalam daftar penduduk kerajaan. Namun, dari tatapannya, terbersit keberanian yang tak dimiliki oleh banyak orang. Tanpa banyak bicara, ia meminta untuk menghadap Raja."
+      }, 
+
+      {
+        "id": 6,
+        "story": "Raja menatap pemuda itu dengan ragu. Ia tak punya pilihan lain. Dengan berat hati, ia memberi restu kepada pemuda itu. Diberikanlah kepadanya sebuah jubah sederhana, bekal secukupnya, dan sebuah pedang tua yang sudah lama tak digunakan. Tak ada upacara, tak ada pidato besar, hanya keheningan yang menyelimuti langkah-langkah pemuda itu"
+      }
+    ]
+    
+    
+    ,
     "background": "/assets/kingdom.jpg",
 
     "dungeons": [
