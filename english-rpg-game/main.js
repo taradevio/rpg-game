@@ -1,21 +1,51 @@
 import "./styles.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const mainMenu = `
-  <div class="main-menu">
-    <div class="img-bg">
-      <img src="/assets/kingdom.jpg" alt="kingdom" class="background"> 
+  function generateMainMenu(backgroundMain) {
+    return `
+    <div class="main-menu">
+      <div class="img-bg">
+        <img src="${backgroundMain}" alt="kingdom" class="background"> 
+      </div>
+      <div class="opening-text">
+        <p class="getter">Are you the chosen one to save the empire?</p>
+        <button class="play-btn">PLAY</button>
+      </div>
     </div>
-    <div class="opening-text">
-      <p>Are you the chosen one to save the empire?</p>
-      <button class="play-btn">PLAY</button>
-    </div>
-  </div>
   `;
+  }
 
-  const prologue = `
-    <div><
-  `
+  function generatePrologue(backgroundMain, prologue) {
+    return `
+    <div class="main-menu">
+      <div class="img-bg">
+        <img src="${backgroundMain}" alt="kingdom" class="background"> 
+      </div>
+      <div class="prologue">
+        <p class="text-prologue">${prologue}</p>
+        <button class="next">Selanjutnya</button>
+      </div>
+    </div>
+    `;
+  }
 
-  document.getElementById("app").innerHTML = mainMenu;
+
+  async function getData() {
+    const response = await fetch("content.json");
+    const contents = await response.json();
+
+    const mainMenu = generateMainMenu(contents.story.background);
+    document.getElementById("app").innerHTML = mainMenu;
+    const btn = document.querySelector(".play-btn");
+    btn.addEventListener("click", () => {
+      const prologueStory = generatePrologue(
+        contents.story.background,
+        contents.story.prologue
+      );
+
+      document.querySelector(".main-menu").innerHTML = prologueStory;
+    });
+  }
+
+  getData();
 });
