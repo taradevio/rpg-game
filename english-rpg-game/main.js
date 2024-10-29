@@ -40,8 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", () => {
       const prologueStory = generatePrologue(
         contents.story.background,
-        contents.story.prologue
+        contents.story.prologue[0].story
       );
+
+    const nextBtn = document.querySelector(".next");
+    // nextBtn.addEventListener("click", () => {
+
+    // })
 
       document.querySelector(".main-menu").innerHTML = prologueStory;
     });
