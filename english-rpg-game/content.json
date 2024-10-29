@@ -1,0 +1,54 @@
+{
+  "story": {
+    "prologue": "Alkisah, di sebuah negeri yang luas dan makmur, berdirilah Kerajaan Caldoria. Kerajaan ini terkenal akan kedamaiannya yang abadi, di mana setiap sudut kota dan desa berselimut ketenteraman. Rakyat hidup sejahtera, hasil bumi melimpah, dan pasar-pasar dipenuhi pedagang yang datang dari negeri jauh. Keadaan politik kerajaan sangatlah stabil, berkat aliansi kuat dengan kerajaan-kerajaan tetangga yang selama ini menjadi mitra dagang sekaligus pelindung tak resmi. Namun, di balik kedamaian itu, terdapat kelemahan yang tak terlihat oleh banyak mata—militer Caldoria terlampau lemah. Mereka bergantung sepenuhnya pada hubungan dagang dan aliansi diplomatik untuk melindungi tanah mereka.",
+    "background": "/assets/kingdom.jpg",
+
+    "dungeons": [
+      {
+        "level": 1,
+        "after_story": "You enter the first dungeon, an eerie maze of stone walls and glowing symbols. The air is thick with tension.",
+        "background": "/assets/dungeon1.jpg"
+      },
+      {
+        "level": 2,
+        "after_story": "The second dungeon is deeper, darker. Shadows seem to move on their own, and strange noises echo through the halls.",
+         "background": "/assets/dungeon2.jpg"
+      },
+      {
+        "level": 3,
+        "after_story": "The final dungeon. The darkness is overwhelming, and the air is heavy with magic. This is the heart of the enemy's power.",
+         "background": "/assets/dungeon3.jpg"
+      }
+    ],
+
+    "epilogues": {
+      "bad_ending": {
+        "description": "Your journey ends here. Worn down and out of hearts, the darkness consumes the empire as you fall in battle.",
+        "reason": "The hero failed to conquer the final dungeon."
+      },
+      "good_ending": {
+        "description": "Triumphant, you return from the dungeons, having destroyed the dark forces. The empire is saved, and your name will be remembered forever.",
+        "reason": "The hero conquered all three dungeons and restored peace."
+      }
+    }
+  },
+
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which part of the sentence is incorrect? 'The man *which* went to the market was late.'",
+      "underlined": [{ "start": 8, "end": 13 }],
+      "choices": ["which", "went", "the market", "was late"],
+      "correct_answer": "which",
+      "explanation": "The correct pronoun is 'who' instead of 'which'."
+    },
+    {
+      "id": 2,
+      "text": "Find the mistake in this sentence: 'She *do* the work every day.'",
+      "underlined": [{ "start": 4, "end": 6 }],
+      "choices": ["She", "do", "the work", "every day"],
+      "correct_answer": "do",
+      "explanation": "It should be 'does' instead of 'do' for third-person singular."
+    }
+  ]
+}
