@@ -25,51 +25,49 @@
       {
         "id": 5,
         "story": "Namun, pada suatu hari yang dingin, ketika kabut pagi belum sepenuhnya terangkat dari tanah, muncullah seorang pemuda di hadapan gerbang istana. Ia tak dikenal oleh siapa pun, bahkan namanya pun tak tercatat dalam daftar penduduk kerajaan. Namun, dari tatapannya, terbersit keberanian yang tak dimiliki oleh banyak orang. Tanpa banyak bicara, ia meminta untuk menghadap Raja."
-      }, 
+      },
 
       {
         "id": 6,
         "story": "Raja menatap pemuda itu dengan ragu. Ia tak punya pilihan lain. Dengan berat hati, ia memberi restu kepada pemuda itu. Diberikanlah kepadanya sebuah jubah sederhana, bekal secukupnya, dan sebuah pedang tua yang sudah lama tak digunakan. Tak ada upacara, tak ada pidato besar, hanya keheningan yang menyelimuti langkah-langkah pemuda itu"
       }
-    ]
-    ,
-
+    ],
     "dungeons": [
       {
-        "level": 1,
+        "level": "Dungeon Level 1",
         "dungeon_prologue": "You enter the first dungeon, an eerie maze of stone walls and glowing symbols. The air is thick with tension.",
         "background": "/assets/dungeon1.jpg"
       },
       {
-        "level": 2,
+        "level": "Dungeon Level 2",
         "dungeon_prologue": "The second dungeon is deeper, darker. Shadows seem to move on their own, and strange noises echo through the halls.",
-         "background": "/assets/dungeon2.jpg"
+        "background": "/assets/dungeon2.jpg"
       },
       {
-        "level": 3,
+        "level": "Dungeon Level 3",
         "dungeon_prologue": "The final dungeon. The darkness is overwhelming, and the air is heavy with magic. This is the heart of the enemy's power.",
-         "background": "/assets/dungeon3.jpg"
+        "background": "/assets/dungeon3.jpg"
       }
     ],
-    
-      "questions": [
-        {
-          "id": 1,
-          "text": "Which part of the sentence is incorrect? 'The man *which* went to the market was late.'",
-          "underlined": [{ "start": 8, "end": 13 }],
-          "choices": ["which", "went", "the market", "was late"],
-          "correct_answer": "which",
-          "explanation": "The correct pronoun is 'who' instead of 'which'."
-        },
-        {
-          "id": 2,
-          "text": "Find the mistake in this sentence: 'She *do* the work every day.'",
-          "underlined": [{ "start": 4, "end": 6 }],
-          "choices": ["She", "do", "the work", "every day"],
-          "correct_answer": "do",
-          "explanation": "It should be 'does' instead of 'do' for third-person singular."
-        }
-      ],
+
+    "questions": [
+      {
+        "id": 1,
+        "text": "Which part of the sentence is incorrect? 'The man *which* went to the market was late.'",
+        "underlined": [{ "start": 8, "end": 13 }],
+        "choices": ["which", "went", "the market", "was late"],
+        "correct_answer": "which",
+        "explanation": "The correct pronoun is 'who' instead of 'which'."
+      },
+      {
+        "id": 2,
+        "text": "Find the mistake in this sentence: 'She *do* the work every day.'",
+        "underlined": [{ "start": 4, "end": 6 }],
+        "choices": ["She", "do", "the work", "every day"],
+        "correct_answer": "do",
+        "explanation": "It should be 'does' instead of 'do' for third-person singular."
+      }
+    ],
 
     "epilogues": {
       "bad_ending": {
