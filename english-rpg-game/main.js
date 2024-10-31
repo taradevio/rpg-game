@@ -44,19 +44,23 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  function generateFirstDungeonQuiz() {
+  function generateFirstDungeonQuiz(bgFirstDungeon, questions) {
     return `
-       <div class="first-dungeon">
-        <div class="opening-dungeon">
-          <h2>Quiz</h2>
+      <div class="quiz-container">
+        <div class="img-bg">
+          <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
+        </div>
+        <div class="quiz">
+          <h2 class="title">${questions}</h2>
           <div class="multiple-choices">
-            <button>A</button>
-            <button>B</button>
-            <button>C</button>
-            <button>D</button>
+            <button>Which</button>
+            <button>Were</button>
+            <button>Who</button>
+            <button>What</button>
           </div>
         </div>
       </div>
+        
     `;
   }
 
@@ -97,14 +101,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function dungeon() {
-      const firstDungeon = contents.story.dungeons[0].background;
+      // const firstDungeon = contents.story.dungeons[0].background;
       const firstDungeonText = contents.story.dungeons[0].level;
 
       const generateFirstDungeon = generateFirstDungeonLevel(
-        firstDungeon,
+        contents.story.dungeons[0].background,
         firstDungeonText
       );
       document.getElementById("app").innerHTML = generateFirstDungeon;
+
+      setTimeout(() => {
+        // document.querySelector(".first-dungeon").style.display = "none";
+
+        firstDungeonQuiz()
+      }, 1000);
+    }
+
+    function firstDungeonQuiz() {
+      const questions = contents.story.questions[0].text;
+
+      const generateQuestions = generateFirstDungeonQuiz(
+        contents.story.dungeons[0].background,
+        questions
+      );
+
+      document.getElementById("app").innerHTML = generateQuestions;
+      // document.querySelector(".quiz-container").style.display = "block";
     }
   }
 
