@@ -31,6 +31,35 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
+  function generateFirstDungeonLevel(bgFirstDungeon, openingDungeon) {
+    return `
+      <div class="first-dungeon">
+        <div class="img-bg">
+          <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
+        </div>
+        <div class="opening-dungeon">
+          <h1>${openingDungeon}</h1>
+        </div>
+      </div>
+    `;
+  }
+
+  function generateFirstDungeonQuiz() {
+    return `
+       <div class="first-dungeon">
+        <div class="opening-dungeon">
+          <h2>Quiz</h2>
+          <div class="multiple-choices">
+            <button>A</button>
+            <button>B</button>
+            <button>C</button>
+            <button>D</button>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+
   async function getData() {
     const response = await fetch("content.json");
     const contents = await response.json();
@@ -46,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function mainStory() {
       // get background from json
       const backgroundMain = contents.story.background;
-      
+
       // get dynamic text from json. the global var of currentPrologueIndex will index the story inside the prologue
       const prologueText = contents.story.prologue[currentPrologueIndex].story;
 
@@ -58,17 +87,26 @@ document.addEventListener("DOMContentLoaded", () => {
       nextBtn.addEventListener("click", () => {
         currentPrologueIndex++;
 
-        if(currentPrologueIndex >= contents.story.prologue.length) {
-          return;
+        if (currentPrologueIndex >= contents.story.prologue.length) {
+          return dungeon();
         }
 
         // the function is invoked again, so that when the next button is clicked, it will generate the function generatePrologue which holds the html template. IF it is not invoked, when clicked, nothing will happen as the html is not generated
         mainStory();
-      })
+      });
+    }
 
+    function dungeon() {
+      const firstDungeon = contents.story.dungeons[0].background;
+      const firstDungeonText = contents.story.dungeons[0].level;
+
+      const generateFirstDungeon = generateFirstDungeonLevel(
+        firstDungeon,
+        firstDungeonText
+      );
+      document.getElementById("app").innerHTML = generateFirstDungeon;
     }
   }
 
   getData();
-
 });
