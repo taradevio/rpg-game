@@ -9,7 +9,7 @@ $font-color: #f5f5f5;
   height: 100vh;
   display: grid;
   place-content: center;
-  .main-menu, .main-story {
+  .main-menu, .main-story, .first-dungeon {
     align-content: center;
     max-width: 744px;
     height: 100vh;
@@ -55,7 +55,7 @@ $font-color: #f5f5f5;
       }
     }
 
-    .prologue {
+    .prologue, .opening-dungeon {
       width: 100%;
       text-align: center;
       position: absolute;
@@ -63,9 +63,9 @@ $font-color: #f5f5f5;
       top: 55%;
       left: 55%;
       transform: translate(-55%, -55%);
+      color: $font-color;
 
       .text-prologue {
-        color: $font-color;
         margin-inline: 8rem;
         margin-top: 2rem;
         font-size: 1.5rem;
@@ -84,7 +84,10 @@ $font-color: #f5f5f5;
           color: $font-color;
         }
       }
+    }
 
+    .opening-dungeon {
+      font-size: 2rem;
     }
   }
 }
