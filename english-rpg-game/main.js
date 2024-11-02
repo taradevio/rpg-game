@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentPrologueIndex = 0;
   let currentQuizQuestions = 0;
   let currentQuizAnswers = 0;
+  let currentCorrectAnswers = 0;
 
   function generateMainMenu(backgroundMain) {
     return `
@@ -140,14 +141,26 @@ document.addEventListener("DOMContentLoaded", () => {
       // use queryselectorall to select all the answers button and use foreach to dynamically assign eventlistener to each button, so that the indexing works
       document.querySelectorAll(".answer").forEach((answerBtn) => {
         answerBtn.addEventListener("click", () => {
-          currentQuizQuestions++;
-          currentQuizAnswers++;
+
+          const correctAnswer = contents.story.questions[currentCorrectAnswers].correct_answer;
+          
+          if(answerBtn.textContent === correctAnswer) {
+            alert("BENER CAK. GAS GAS GAS SEMETON");
+            currentQuizQuestions++;
+            currentQuizAnswers++;
+            currentCorrectAnswers++
+          } else {
+            alert("SALAH CUK")
+            return;
+          }
+           
 
           if (
             currentQuizQuestions &&
             currentQuizAnswers >= contents.story.questions.length
           ) {
-            return alert("end of questions");
+            alert("end of questions");
+            return;
           }
 
           firstDungeonQuiz();
