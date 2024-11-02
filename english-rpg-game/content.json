@@ -53,7 +53,7 @@
     "questions": [
       {
         "id": 1,
-        "text": "Which part of the sentence is incorrect? 'The man *which* went to the market was late.'",
+        "text": "Which part of the sentence is incorrect? 'The man which went to the market was late.'",
         "underlined": [{ "start": 8, "end": 13 }],
         "choices": ["which", "went", "the market", "was late"],
         "correct_answer": "which",
