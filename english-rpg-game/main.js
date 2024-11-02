@@ -110,34 +110,50 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         // document.querySelector(".first-dungeon").style.display = "none";
 
-        firstDungeonQuiz()
+        firstDungeonQuiz();
       }, 1500);
     }
 
     function firstDungeonQuiz() {
-      // const questions = contents.story.questions[0].text;
+      
       const newQuestion = contents.story.questions[currentQuizQuestions].text;
       const newAnswers = contents.story.questions[currentQuizAnswers].choices;
-      
+
       const generateQuestions = generateFirstDungeonQuiz(
         contents.story.dungeons[0].background,
         newQuestion
       );
-      
-      
+
       document.getElementById("app").innerHTML = generateQuestions;
       const quizSection = document.querySelector(".multiple-choices");
 
-      const singleQuestion = newAnswers.map(item => {
-        return `
-          <button>${item}</button>
-        `
-      }).join('');
+      // create button dynamically by mapping it based on the json value
+      const singleQuestion = newAnswers
+        .map((item) => {
+          return `
+          <button class="answer">${item}</button>
+        `;
+        })
+        .join("");
       quizSection.innerHTML = singleQuestion;
-      
+
+      // use queryselectorall to select all the answers button and use foreach to dynamically assign eventlistener to each button, so that the indexing works
+      document.querySelectorAll(".answer").forEach((answerBtn) => {
+        answerBtn.addEventListener("click", () => {
+          currentQuizQuestions++;
+          currentQuizAnswers++;
+
+          if (
+            currentQuizQuestions &&
+            currentQuizAnswers >= contents.story.questions.length
+          ) {
+            return alert("end of questions");
+          }
+
+          firstDungeonQuiz();
+        });
+      });
     }
-
-
   }
 
   getData();
