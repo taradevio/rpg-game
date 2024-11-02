@@ -2,6 +2,8 @@ import "./styles.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
   let currentPrologueIndex = 0;
+  let currentQuizQuestions = 0;
+  let currentQuizAnswers = 0;
 
   function generateMainMenu(backgroundMain) {
     return `
@@ -10,8 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="${backgroundMain}" alt="kingdom" class="background"> 
       </div>
       <div class="opening-text">
-        <p class="getter">Are you the chosen one to save the empire?</p>
-        <button class="play-btn">PLAY</button>
+        <p class="getter">Apakah kamu yang terpilih untuk menyelamatkan kerajaan?</p>
+        <button class="play-btn">MAIN</button>
       </div>
     </div>
   `;
@@ -52,12 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="quiz">
           <h2 class="title">${questions}</h2>
-          <div class="multiple-choices">
-            <button>Which</button>
-            <button>Were</button>
-            <button>Who</button>
-            <button>What</button>
-          </div>
+          <div class="multiple-choices"></div>
         </div>
       </div>
         
@@ -114,20 +111,33 @@ document.addEventListener("DOMContentLoaded", () => {
         // document.querySelector(".first-dungeon").style.display = "none";
 
         firstDungeonQuiz()
-      }, 1000);
+      }, 1500);
     }
 
     function firstDungeonQuiz() {
-      const questions = contents.story.questions[0].text;
-
+      // const questions = contents.story.questions[0].text;
+      const newQuestion = contents.story.questions[currentQuizQuestions].text;
+      const newAnswers = contents.story.questions[currentQuizAnswers].choices;
+      
       const generateQuestions = generateFirstDungeonQuiz(
         contents.story.dungeons[0].background,
-        questions
+        newQuestion
       );
-
+      
+      
       document.getElementById("app").innerHTML = generateQuestions;
-      // document.querySelector(".quiz-container").style.display = "block";
+      const quizSection = document.querySelector(".multiple-choices");
+
+      const singleQuestion = newAnswers.map(item => {
+        return `
+          <button>${item}</button>
+        `
+      }).join('');
+      quizSection.innerHTML = singleQuestion;
+      
     }
+
+
   }
 
   getData();
