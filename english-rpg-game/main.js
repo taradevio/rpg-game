@@ -117,8 +117,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function firstDungeonQuiz() {
       
-      const newQuestion = contents.story.questions[currentQuizQuestions].text;
-      const newAnswers = contents.story.questions[currentQuizAnswers].choices;
+      const newQuestion = contents.story.questions.level_1[currentQuizQuestions].text;
+      const newAnswers = contents.story.questions.level_1[currentQuizAnswers].choices;
 
       const generateQuestions = generateFirstDungeonQuiz(
         contents.story.dungeons[0].background,
@@ -142,7 +142,7 @@ document.addEventListener("DOMContentLoaded", () => {
       document.querySelectorAll(".answer").forEach((answerBtn) => {
         answerBtn.addEventListener("click", () => {
 
-          const correctAnswer = contents.story.questions[currentCorrectAnswers].correct_answer;
+          const correctAnswer = contents.story.questions.level_1[currentCorrectAnswers].correct_answer;
           
           if(answerBtn.textContent === correctAnswer) {
             alert("GAS GAS GAS SEMETON");
@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           if (
             currentQuizQuestions &&
-            currentQuizAnswers >= contents.story.questions.length
+            currentQuizAnswers >= contents.story.questions.level_1.length
           ) {
             alert("end of questions");
             return;
