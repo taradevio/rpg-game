@@ -53,19 +53,83 @@
     "questions": [
       {
         "id": 1,
-        "text": "Which part of the sentence is incorrect? 'The man which went to the market was late.'",
+        "text": "He produces a similar record ___ that of the winner five years ago",
         "underlined": [{ "start": 8, "end": 13 }],
-        "choices": ["which", "went", "the market", "was late"],
-        "correct_answer": "which",
+        "choices": ["to", "with", "for", "about"],
+        "correct_answer": "to",
         "explanation": "The correct pronoun is 'who' instead of 'which'."
       },
       {
         "id": 2,
-        "text": "Find the mistake in this sentence: 'She *do* the work every day.'",
+        "text": "This is ___ we can go. We ___ the same again at this time tomorrow'",
         "underlined": [{ "start": 4, "end": 6 }],
-        "choices": ["She", "do", "the work", "every day"],
-        "correct_answer": "do",
+        "choices": ["the farther, will do", "the furthest, will be doing" , "the further will have done, ", "the farthest, will be doing"],
+        "correct_answer": "the farthest, will be doing",
         "explanation": "It should be 'does' instead of 'do' for third-person singular."
+      },
+      {
+        "id": 3,
+        "text": "He was __ honest and fair man, yet __ horrendous battle took place and into the distance had he gone",
+        "underlined": [{ "start": 8, "end": 13 }],
+        "choices": ["a, an", "an, an", "an, a", "a, a"],
+        "correct_answer": "an, a",
+        "explanation": "The correct pronoun is 'who' instead of 'which'."
+      },
+      {
+        "id": 4,
+        "text": "Barely ___ money left to set out on a new adventure. Shall we get ___?",
+        "underlined": [{ "start": 8, "end": 13 }],
+        "choices": ["some, any", "any, any", "many, some", "any, some"],
+        "correct_answer": "any, some",
+        "explanation": "The correct pronoun is 'who' instead of 'which'."
+      },
+      {
+        "id": 5,
+        "text": "Don't worry, boss. I ___ it before 5",
+        "underlined": [{ "start": 8, "end": 13 }],
+        "choices": ["will have finished", "will be finishing", "will finish", "will have been finishing"],
+        "correct_answer": "will have finished",
+        "explanation": "The correct pronoun is 'who' instead of 'which'."
+      },
+      {
+        "id": 5,
+        "text": "Don't worry, boss. I ___ it before 5",
+        "underlined": [{ "start": 8, "end": 13 }],
+        "choices": ["will have finished", "will be finishing", "will finish", "will have been finishing"],
+        "correct_answer": "will have finished",
+        "explanation": "The correct pronoun is 'who' instead of 'which'."
+      },
+      {
+        "id": 5,
+        "text": "Don't worry, boss. I ___ it before 5",
+        "underlined": [{ "start": 8, "end": 13 }],
+        "choices": ["will have finished", "will be finishing", "will finish", "will have been finishing"],
+        "correct_answer": "will have finished",
+        "explanation": "The correct pronoun is 'who' instead of 'which'."
+      },
+      {
+        "id": 5,
+        "text": "Don't worry, boss. I ___ it before 5",
+        "underlined": [{ "start": 8, "end": 13 }],
+        "choices": ["will have finished", "will be finishing", "will finish", "will have been finishing"],
+        "correct_answer": "will have finished",
+        "explanation": "The correct pronoun is 'who' instead of 'which'."
+      },
+      {
+        "id": 5,
+        "text": "Don't worry, boss. I ___ it before 5",
+        "underlined": [{ "start": 8, "end": 13 }],
+        "choices": ["will have finished", "will be finishing", "will finish", "will have been finishing"],
+        "correct_answer": "will have finished",
+        "explanation": "The correct pronoun is 'who' instead of 'which'."
+      },
+      {
+        "id": 5,
+        "text": "Don't worry, boss. I ___ it before 5",
+        "underlined": [{ "start": 8, "end": 13 }],
+        "choices": ["will have finished", "will be finishing", "will finish", "will have been finishing"],
+        "correct_answer": "will have finished",
+        "explanation": "The correct pronoun is 'who' instead of 'which'."
       }
     ],
 
