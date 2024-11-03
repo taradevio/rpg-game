@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", () => {
           const correctAnswer = contents.story.questions[currentCorrectAnswers].correct_answer;
           
           if(answerBtn.textContent === correctAnswer) {
-            alert("BENER CAK. GAS GAS GAS SEMETON");
+            alert("GAS GAS GAS SEMETON");
             currentQuizQuestions++;
             currentQuizAnswers++;
             currentCorrectAnswers++
