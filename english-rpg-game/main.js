@@ -1,10 +1,13 @@
 import "./styles.scss";
+// import { randomQuote } from "./createHearts";
 
 document.addEventListener("DOMContentLoaded", () => {
   let currentPrologueIndex = 0;
   let currentQuizQuestions = 0;
   let currentQuizAnswers = 0;
   let currentCorrectAnswers = 0;
+  let loseConditionIndex = 0;
+  let gameOver = false;
   let remainingLives = 3;
 
   function generateMainMenu(backgroundMain) {
@@ -48,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  function generateFirstDungeonQuiz(bgFirstDungeon, questions, life) {
+  function generateFirstDungeonQuiz(bgFirstDungeon, questions) {
     return `
       <div class="quiz-container">
         <div class="img-bg">
@@ -59,9 +62,39 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="multiple-choices"></div>
         </div>
         <div class="life-icon">
-          <h3>Nyawa Tersisa: <span class="life-number">${life}</span></h3>
+          <h3 class="index">${currentQuizQuestions + 1} / 10</h3>
+          <h3>Nyawa Tersisa: <span class="life-number"></span></h3>
         </div>
       </div>
+    `;
+  }
+
+  function generateLoseCondition(bgFirstDungeon, title, quote) {
+    return `
+    <div class="quiz-container">
+        <div class="img-bg">
+          <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
+        </div>
+      <div class="lose-page">
+        <h1>${title}</h1>
+        <p>${quote}</p>
+        <button class="nextDesc">Selanjutnya</button>
+      </div>
+    </div>
+    `;
+  }
+
+  function generateLoseConditionDescription(bgFirstDungeon, description) {
+    return `
+    <div class="quiz-container">
+        <div class="img-bg">
+          <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
+        </div>
+      <div class="lose-page">
+        <p>${description}</p>
+        <button class="nextDesc">Selanjutnya</button>
+      </div>
+    </div>
     `;
   }
 
@@ -112,27 +145,26 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("app").innerHTML = generateFirstDungeon;
 
       setTimeout(() => {
-        // document.querySelector(".first-dungeon").style.display = "none";
-
         firstDungeonQuiz();
       }, 1500);
     }
 
     function firstDungeonQuiz() {
+      if (gameOver) return;
       const newQuestion =
         contents.story.questions.level_1[currentQuizQuestions].text;
       const newAnswers =
         contents.story.questions.level_1[currentQuizAnswers].choices;
 
-        
-        const generateQuestions = generateFirstDungeonQuiz(
-          contents.story.dungeons[0].background,
-          newQuestion
-        );
-        
-        document.getElementById("app").innerHTML = generateQuestions;
-        const updateLives = document.querySelector(".life-number");
-        updateLives.textContent = remainingLives;
+      const generateQuestions = generateFirstDungeonQuiz(
+        contents.story.dungeons[0].background,
+        newQuestion
+      );
+
+      document.getElementById("app").innerHTML = generateQuestions;
+
+      const updateLives = document.querySelector(".life-number");
+      updateLives.textContent = remainingLives;
 
       const quizSection = document.querySelector(".multiple-choices");
 
@@ -167,15 +199,67 @@ document.addEventListener("DOMContentLoaded", () => {
             answerBtn.style.color = "white";
             // alert("jawaban salah")
             remainingLives--;
+            setTimeout(() => {
+              firstDungeonQuiz();
+            }, 400);
+          }
+
+          function randomQuote() {
+            const getQuotes = contents.story.epilogues.bad_ending.quotes;
+            return getQuotes[Math.floor(Math.random() * getQuotes.length)];
           }
 
           if (remainingLives <= 0) {
-            alert("you lose");
-          }
+            gameOver = true;
+            function createGameOver() {
+              const getTitle =
+                contents.story.epilogues.bad_ending.description_title;
 
-          setTimeout(() => {
-            firstDungeonQuiz();
-          }, 400);
+              const createRandomQuotes = randomQuote();
+              const createLoseCondition = generateLoseCondition(
+                contents.story.dungeons[0].background,
+                getTitle,
+                createRandomQuotes
+              );
+              document.getElementById("app").innerHTML = createLoseCondition;
+            }
+
+            createGameOver();
+
+            const nextLosePage = document.querySelector(".nextDesc");
+
+            nextLosePage.addEventListener("click", () => {
+              const getDescription = contents.story.epilogues.bad_ending.description[loseConditionIndex].par;
+
+              const loseDescription = generateLoseConditionDescription(contents.story.dungeons[0].background, getDescription);
+
+              document.getElementById("app").innerHTML = loseDescription;
+            })
+
+            // function finalStory() {
+            //   const getDescription =
+            //     contents.story.epilogues.bad_ending.description[
+            //       loseConditionIndex
+            //     ].par;
+
+            //   const loseDescription =
+            //     generateLoseConditionDescription(contents.story.dungeons[0].background, getDescription);
+            //   document.getElementById("app").innerHTML = loseDescription;
+            //   if (
+            //     loseConditionIndex >=
+            //     contents.story.epilogues.bad_ending.description.length
+            //   ) {
+            //     return alert("end of story");
+            //   }
+            // }
+            // nextLosePage.addEventListener("click", () => {
+            //   loseConditionIndex++;
+
+            // });
+
+            // finalStory();
+            return;
+          }
 
           if (
             currentQuizQuestions &&
@@ -184,15 +268,9 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("end of questions");
             return;
           }
-
-          // firstDungeonQuiz();
         });
       });
     }
-
-
-
-
   }
 
   getData();
