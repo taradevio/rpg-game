@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentQuizQuestions = 0;
   let currentQuizAnswers = 0;
   let currentCorrectAnswers = 0;
+  let remainingLives = 3;
 
   function generateMainMenu(backgroundMain) {
     return `
@@ -47,18 +48,20 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  function generateFirstDungeonQuiz(bgFirstDungeon, questions) {
+  function generateFirstDungeonQuiz(bgFirstDungeon, questions, life) {
     return `
       <div class="quiz-container">
         <div class="img-bg">
           <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
         </div>
         <div class="quiz">
-          <h2 class="title">${questions}</h2>
-          <div class="multiple-choices"></div>
+        <h2 class="title">${questions}</h2>
+        <div class="multiple-choices"></div>
+        </div>
+        <div class="life-icon">
+          <h3>Nyawa Tersisa: <span class="life-number">${life}</span></h3>
         </div>
       </div>
-        
     `;
   }
 
@@ -116,16 +119,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function firstDungeonQuiz() {
-      
-      const newQuestion = contents.story.questions.level_1[currentQuizQuestions].text;
-      const newAnswers = contents.story.questions.level_1[currentQuizAnswers].choices;
+      const newQuestion =
+        contents.story.questions.level_1[currentQuizQuestions].text;
+      const newAnswers =
+        contents.story.questions.level_1[currentQuizAnswers].choices;
 
-      const generateQuestions = generateFirstDungeonQuiz(
-        contents.story.dungeons[0].background,
-        newQuestion
-      );
+        
+        const generateQuestions = generateFirstDungeonQuiz(
+          contents.story.dungeons[0].background,
+          newQuestion
+        );
+        
+        document.getElementById("app").innerHTML = generateQuestions;
+        const updateLives = document.querySelector(".life-number");
+        updateLives.textContent = remainingLives;
 
-      document.getElementById("app").innerHTML = generateQuestions;
       const quizSection = document.querySelector(".multiple-choices");
 
       // create button dynamically by mapping it based on the json value
@@ -141,19 +149,33 @@ document.addEventListener("DOMContentLoaded", () => {
       // use queryselectorall to select all the answers button and use foreach to dynamically assign eventlistener to each button, so that the indexing works
       document.querySelectorAll(".answer").forEach((answerBtn) => {
         answerBtn.addEventListener("click", () => {
+          const correctAnswer =
+            contents.story.questions.level_1[currentCorrectAnswers]
+              .correct_answer;
 
-          const correctAnswer = contents.story.questions.level_1[currentCorrectAnswers].correct_answer;
-          
-          if(answerBtn.textContent === correctAnswer) {
-            alert("GAS GAS GAS SEMETON");
+          if (answerBtn.textContent === correctAnswer) {
+            answerBtn.style.backgroundColor = "green";
+            answerBtn.style.color = "white";
             currentQuizQuestions++;
             currentQuizAnswers++;
-            currentCorrectAnswers++
+            currentCorrectAnswers++;
+            setTimeout(() => {
+              firstDungeonQuiz();
+            }, 400);
           } else {
-            alert("SALAH CUK")
-            return;
+            answerBtn.style.backgroundColor = "red";
+            answerBtn.style.color = "white";
+            // alert("jawaban salah")
+            remainingLives--;
           }
-           
+
+          if (remainingLives <= 0) {
+            alert("you lose");
+          }
+
+          setTimeout(() => {
+            firstDungeonQuiz();
+          }, 400);
 
           if (
             currentQuizQuestions &&
@@ -163,10 +185,14 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
           }
 
-          firstDungeonQuiz();
+          // firstDungeonQuiz();
         });
       });
     }
+
+
+
+
   }
 
   getData();
