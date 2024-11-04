@@ -64,7 +64,12 @@
           "id": 2,
           "text": "This is ___ we can go. We ___ the same again at this time tomorrow'",
           "underlined": [{ "start": 4, "end": 6 }],
-          "choices": ["the farther, will do", "the furthest, will be doing" , "the further will have done, ", "the farthest, will be doing"],
+          "choices": [
+            "the farther, will do",
+            "the furthest, will be doing",
+            "the further will have done, ",
+            "the farthest, will be doing"
+          ],
           "correct_answer": "the farthest, will be doing",
           "explanation": "It should be 'does' instead of 'do' for third-person singular."
         },
@@ -88,7 +93,12 @@
           "id": 5,
           "text": "Don't worry, boss. I ___ it before 5",
           "underlined": [{ "start": 8, "end": 13 }],
-          "choices": ["will have finished", "will be finishing", "will finish", "will have been finishing"],
+          "choices": [
+            "will have finished",
+            "will be finishing",
+            "will finish",
+            "will have been finishing"
+          ],
           "correct_answer": "will have finished",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
         },
@@ -102,9 +112,14 @@
         },
         {
           "id": 7,
-          "text": "Razor goes to a barber ___",
+          "text": "Razor visits a barber shop ___",
           "underlined": [{ "start": 8, "end": 13 }],
-          "choices": ["to cut his hair", "for cutting his har", "to have cut his hair", "to have his hair cut"],
+          "choices": [
+            "to cut his hair",
+            "for cutting his har",
+            "to have cut his hair",
+            "to have his hair cut"
+          ],
           "correct_answer": "to have his hair cut",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
         },
@@ -112,7 +127,12 @@
           "id": 8,
           "text": "___ win this grand prix, ___ donate all of my money",
           "underlined": [{ "start": 8, "end": 13 }],
-          "choices": ["was I to, I had", "had I to, I would", "were I to, I would", "If I was to, I would"],
+          "choices": [
+            "was I to, I had",
+            "had I to, I would",
+            "were I to, I would",
+            "If I was to, I would"
+          ],
           "correct_answer": "were I to, I would",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
         },
@@ -128,23 +148,43 @@
           "id": 10,
           "text": "___, he's no match for the searing pace of Pecco Bagnaia",
           "underlined": [{ "start": 8, "end": 13 }],
-          "choices": ["try as he should", "do as he can", "try as he could", "try as he may"],
-          "correct_answer": "try as he might",
+          "choices": [
+            "try as he should",
+            "do as he can",
+            "try as he could",
+            "try as he may"
+          ],
+          "correct_answer": "try as he may",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
         }
       ],
 
-      "level_2": [
-        {
-
-        }
-      ]
+      "level_2": [{}]
     },
 
     "epilogues": {
       "bad_ending": {
-        "description": "Your journey ends here. Worn down and out of hearts, the darkness consumes the empire as you fall in battle.",
-        "reason": "The hero failed to conquer the final dungeon."
+        "description_title": "The hero has fallen",
+        "description": [
+          {
+            "par": "Dan begitulah akhirnya. Takdir yang selama ini mengiringi setiap langkah sang pahlawan perlahan memudar dalam kegelapan yang pekat. Setelah sekian banyak harapan yang ditaruh di pundaknya, sang pahlawan kini terbaring tak berdaya di dasar dungeon, di tengah reruntuhan penjara kuno yang selama ini menjadi saksi bisu kejatuhan banyak jiwa pemberani. Angin dingin berhembus lemah di dalam ruang bawah tanah yang berbau kematian. Cahaya dari obor-obor yang redup berkedip seperti enggan menyaksikan akhir dari seorang yang pernah dianggap sebagai penyelamat kerajaan"
+          },
+          {
+            "par": "Caldoria telah menemui nasibnya.Tanpa pahlawan, tanpa harapan, perlahan tenggelam dalam keputusasaan. Dan dunia terus berjalan tanpa adanya cahaya."
+          }
+        ],
+        "quotes": [
+          "The limits of my language mean the limits of my world - Ludwig Wittgenstein",
+          "He who knows no foreign languages knows nothing of his own - Johann Wolfgang von Goethe",
+          "If you talk to a man in a language he understands, that goes to his head. If you talk to him in his own language, that goes to his heart - Nelson Mandela",
+          "To have another language is to possess a second soul - Charlemagne",
+          "Learning another language is not only learning different words for the same things, but learning another way to think about things - Flora Lewis",
+          "A mistake is to commit a misunderstanding - Bob Dylan",
+          "The secret of getting ahead is getting started - Mark Twain",
+          "Language is wine upon the lips - Virginia Woolf",
+          "Live as if you were to die tomorrow. Learn as if you were to live forever - Mahatma Gandhi",
+          "Ever tried. Ever failed. No matter. Try again. Fail again. Fail better - Samuel Beckett"
+        ]
       },
       "good_ending": {
         "description": "Triumphant, you return from the dungeons, having destroyed the dark forces. The empire is saved, and your name will be remembered forever.",
