@@ -216,6 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 400);
           }
 
+          // this function handles the lose page consisting of title and quote
           function handleGameOver() {
             function randomQuote() {
               const getQuotes = contents.story.epilogues.bad_ending.quotes;
@@ -237,6 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
           }
 
+          // function to continue to the descriptions
           function updateLoseDescription() {
             const getDescription =
               contents.story.epilogues.bad_ending.description[
@@ -250,6 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             document.getElementById("app").innerHTML = loseDescription;
 
+            // the button creaated after the within the lose description page will go on the last description and will restart the game
             const startOver = document.querySelector(".start-over");
             startOver.addEventListener("click", () => {
               loseConditionIndex++;
@@ -259,6 +262,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 contents.story.epilogues.bad_ending.description.length
               ) {
                 alert("game akan dimulai dari awal");
+                function resetGame() {
+                  currentQuizAnswers = 0;
+                  currentCorrectAnswers = 0;
+                  currentQuizQuestions = 0;
+                  remainingLives = 3;
+                  loseConditionIndex = 0;
+                  gameOver = false;
+                }
                 resetGame();
                 setTimeout(() => {
                   dungeon();
@@ -269,14 +280,6 @@ document.addEventListener("DOMContentLoaded", () => {
             });
           }
 
-          function resetGame() {
-            currentQuizAnswers = 0;
-            currentCorrectAnswers = 0;
-            currentQuizQuestions = 0;
-            remainingLives = 3;
-            loseConditionIndex = 0;
-            gameOver = false;
-          }
         });
       });
     }
