@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
         </div>
         <div class="quiz">
-        <h2 class="title">${questions}</h2>
+          <h2 class="title">${questions}</h2>
         <div class="multiple-choices"></div>
         </div>
         <div class="life-icon">
@@ -105,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       <div class="review-page">
         <div class="explanation"></div>
+        <button>Selanjutnya</button>
       </div>
     </div>
     `;
