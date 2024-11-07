@@ -159,7 +159,8 @@
         }
       ],
 
-      "level_2": [{}]
+      "level_2": [{}],
+      "level_3": [{}]
     },
 
     "epilogues": {
@@ -187,7 +188,7 @@
         ]
       },
       "good_ending": {
-        "description": "Triumphant, you return from the dungeons, having destroyed the dark forces. The empire is saved, and your name will be remembered forever.",
+        "description": "Triumphant, you return from the dungeons. Having destroyed the dark forces, The empire is saved, and your name will be remembered forever.",
         "reason": "The hero conquered all three dungeons and restored peace."
       }
     }
