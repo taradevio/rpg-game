@@ -103,9 +103,11 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="img-bg">
           <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
         </div>
-      <div class="review-page"></div>
+      <div class="review-page">
+        <div class="explanation"></div>
+      </div>
     </div>
-    `
+    `;
   }
 
   async function getData() {
@@ -204,10 +206,12 @@ document.addEventListener("DOMContentLoaded", () => {
               currentQuizQuestions &&
               currentQuizAnswers >= contents.story.questions.level_1.length
             ) {
-              alert("thank you for playing. Player akan diarahkan ke bagian review");
+              alert(
+                "thank you for playing. Player akan diarahkan ke bagian review"
+              );
               setTimeout(() => {
                 showReviewPage();
-              }, 400)
+              }, 400);
               return;
             }
             // setTimeout(() => {
@@ -292,15 +296,34 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             });
           }
-
         });
       });
     }
 
     function showReviewPage() {
-      const generateBgReview = generateReviewPage(contents.story.dungeons[0].background)
+      const generateBgReview = generateReviewPage(
+        contents.story.dungeons[0].background
+      );
 
-     document.getElementById("app").innerHTML = generateBgReview;
+      document.getElementById("app").innerHTML = generateBgReview;
+
+      const createReviewDropdown = contents.story.questions.level_1
+        .map((item) => {
+          return `
+        <details>
+          <summary>${item.text}</summary>
+          <div>
+            <h3>${item.correct_answer}</h3>
+            <p>Penjelasan:</p>
+            <p>${item.explanation}</p>
+          </div>
+        </details>
+        
+      `;
+        })
+        .join("");
+
+      document.querySelector(".explanation").innerHTML = createReviewDropdown;
     }
   }
 
