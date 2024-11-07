@@ -1,5 +1,4 @@
 import "./styles.scss";
-// import { randomQuote } from "./createHearts";
 
 document.addEventListener("DOMContentLoaded", () => {
   let currentPrologueIndex = 0;
@@ -98,6 +97,17 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
+  function generateReviewPage(bgFirstDungeon) {
+    return `
+      <div class="quiz-container">
+        <div class="img-bg">
+          <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
+        </div>
+      <div class="review-page"></div>
+    </div>
+    `
+  }
+
   async function getData() {
     const response = await fetch("content.json");
     const contents = await response.json();
@@ -134,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function dungeon() {
-      console.log("entering the dungeon");
+      // console.log("entering the dungeon");
       const firstDungeonText = contents.story.dungeons[0].level;
 
       const generateFirstDungeon = generateFirstDungeonLevel(
@@ -194,12 +204,15 @@ document.addEventListener("DOMContentLoaded", () => {
               currentQuizQuestions &&
               currentQuizAnswers >= contents.story.questions.level_1.length
             ) {
-              alert("end of questions");
+              alert("thank you for playing. Player akan diarahkan ke bagian review");
+              setTimeout(() => {
+                showReviewPage();
+              }, 400)
               return;
             }
-            setTimeout(() => {
-              firstDungeonQuiz();
-            }, 400);
+            // setTimeout(() => {
+            //   firstDungeonQuiz();
+            // }, 400);
           } else {
             answerBtn.style.backgroundColor = "red";
             answerBtn.style.color = "white";
@@ -282,6 +295,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         });
       });
+    }
+
+    function showReviewPage() {
+      const generateBgReview = generateReviewPage(contents.story.dungeons[0].background)
+
+     document.getElementById("app").innerHTML = generateBgReview;
     }
   }
 
