@@ -104,8 +104,8 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
         </div>
       <div class="review-page">
-        <div class="explanation"></div>
-        <button>Selanjutnya</button>
+        <div class="explanation-wrapper"></div>
+      <button class="next-story">Selanjutnya</button>
       </div>
     </div>
     `;
@@ -311,20 +311,21 @@ document.addEventListener("DOMContentLoaded", () => {
       const createReviewDropdown = contents.story.questions.level_1
         .map((item) => {
           return `
-        <details>
-          <summary>${item.text}</summary>
-          <div>
-            <h3>${item.correct_answer}</h3>
-            <p>Penjelasan:</p>
-            <p>${item.explanation}</p>
+          <div class="explanation">
+            <details>
+              <summary>${item.text}</summary>
+            <div>
+              <h3>${item.correct_answer}</h3>
+              <p>Penjelasan:</p>
+              <p>${item.explanation}</p>
+            </div>
+            </details>
           </div>
-        </details>
-        
       `;
         })
         .join("");
 
-      document.querySelector(".explanation").innerHTML = createReviewDropdown;
+      document.querySelector(".explanation-wrapper").innerHTML = createReviewDropdown;
     }
   }
 
