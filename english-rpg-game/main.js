@@ -2,6 +2,7 @@ import "./styles.scss";
 
 document.addEventListener("DOMContentLoaded", () => {
   let currentPrologueIndex = 0;
+  let currentAfterStoryDungeon1 = 0;
   let currentQuizQuestions = 0;
   let currentQuizAnswers = 0;
   let currentCorrectAnswers = 0;
@@ -105,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       <div class="review-page">
         <div class="explanation-wrapper"></div>
-      <button class="next-story">Selanjutnya</button>
+        <button class="next-story">Selanjutnya</button>
       </div>
     </div>
     `;
@@ -207,12 +208,9 @@ document.addEventListener("DOMContentLoaded", () => {
               currentQuizQuestions &&
               currentQuizAnswers >= contents.story.questions.level_1.length
             ) {
-              alert(
-                "thank you for playing. Player akan diarahkan ke bagian review"
-              );
               setTimeout(() => {
                 showReviewPage();
-              }, 400);
+              }, 200);
               return;
             }
             // setTimeout(() => {
@@ -231,7 +229,7 @@ document.addEventListener("DOMContentLoaded", () => {
           } else {
             setTimeout(() => {
               firstDungeonQuiz();
-            }, 400);
+            }, 200);
           }
 
           // this function handles the lose page consisting of title and quote
@@ -326,7 +324,42 @@ document.addEventListener("DOMContentLoaded", () => {
         .join("");
 
       document.querySelector(".explanation-wrapper").innerHTML = createReviewDropdown;
+
+      const nextStory = document.querySelector(".next-story");
+        nextStory.addEventListener("click", () => {
+          afterStoryDungeon1();
+        })
+      
     }
+
+
+  function afterStoryDungeon1() {
+    const getAfterStory = contents.story.after_dungeon_1_story[currentAfterStoryDungeon1].story;
+
+    const generateAfterStory = generatePrologue(contents.story.background, getAfterStory);
+    document.getElementById("app").innerHTML = generateAfterStory; 
+
+    const nextBtn = document.querySelector(".next");
+    nextBtn.addEventListener("click", () => {
+      currentAfterStoryDungeon1++
+
+      if(currentAfterStoryDungeon1 >= contents.story.after_dungeon_1_story.length) {
+       const userResponse = prompt("Apakah kamu siap menghadapi dungeon 2?");
+
+        if(userResponse === "ya" || userResponse === "YA" || userResponse === "Ya" || userResponse === "y") {
+          alert("gas gas gas semeton")
+          return;
+        } else {
+          alert("a coward")
+          return;
+        }
+      }
+
+      afterStoryDungeon1();
+    })
+  }
+
+
   }
 
   getData();
