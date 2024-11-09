@@ -32,6 +32,17 @@
         "story": "Raja menatap pemuda itu dengan ragu. Ia tak punya pilihan lain. Dengan berat hati, ia memberi restu kepada pemuda itu. Diberikanlah kepadanya sebuah jubah sederhana, bekal secukupnya, dan sebuah pedang tua yang sudah lama tak digunakan. Tak ada upacara, tak ada pidato besar, hanya keheningan yang menyelimuti langkah-langkah pemuda itu"
       }
     ],
+    "after_dungeon_1_story": [
+      {
+        "story": "Setelah melewati tantangan pertama di dungeon yang terletak di tepi hutan, sang pahlawan kembali ke Astronia dengan artefak pertama—Amulet Keberanian. Artefak kuno ini diyakini memiliki kekuatan untuk mengusir kegelapan dan meningkatkan semangat juang orang-orang di sekitarnya. Berita tentang kemenangannya menyebar dengan cepat, membawa harapan yang baru kepada rakyat Caldoria yang sebelumnya dilanda keputusasaan."
+      },
+      {
+        "story": "Kemenangan ini adalah awal dari harapan baru, namun bayangan dari dungeon-dungeon berikutnya tetap menghantui. Meski begitu, rakyat Caldoria mulai percaya bahwa dengan keberanian dan tekad, sang pahlawan mungkin benar-benar dapat menyelamatkan kerajaan mereka."
+      },
+      {
+        "story": "Namun, tugas sang pahlawan belum selesai. Jauh di dalam dungeon kedua, tersembunyi artefak yang selama ini menjadi legenda—Crown of Light, mahkota cahaya yang konon memiliki kekuatan untuk menghapus menutup portal monster."
+      }
+    ],
     "dungeons": [
       {
         "level": "Dungeon Level 1",
