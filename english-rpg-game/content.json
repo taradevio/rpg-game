@@ -66,7 +66,6 @@
         {
           "id": 1,
           "text": "He produces a similar record ___ that of the winner five years ago",
-          "underlined": [{ "start": 8, "end": 13 }],
           "choices": ["to", "with", "for", "about"],
           "correct_answer": "to",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
@@ -74,7 +73,6 @@
         {
           "id": 2,
           "text": "This is ___ we can go. We ___ the same again at this time tomorrow'",
-          "underlined": [{ "start": 4, "end": 6 }],
           "choices": [
             "the farther, will do",
             "the furthest, will be doing",
@@ -87,7 +85,6 @@
         {
           "id": 3,
           "text": "He was __ honest and fair man, yet __ horrendous battle took place and into the distance had he gone",
-          "underlined": [{ "start": 8, "end": 13 }],
           "choices": ["a, an", "an, an", "an, a", "a, a"],
           "correct_answer": "an, a",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
@@ -95,7 +92,6 @@
         {
           "id": 4,
           "text": "Barely ___ money left to set out on a new adventure. Shall we get ___?",
-          "underlined": [{ "start": 8, "end": 13 }],
           "choices": ["some, any", "any, any", "many, some", "any, some"],
           "correct_answer": "any, some",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
@@ -103,7 +99,6 @@
         {
           "id": 5,
           "text": "Don't worry, boss. I ___ it before 5",
-          "underlined": [{ "start": 8, "end": 13 }],
           "choices": [
             "will have finished",
             "will be finishing",
@@ -116,7 +111,6 @@
         {
           "id": 6,
           "text": "___ weather we have today!",
-          "underlined": [{ "start": 8, "end": 13 }],
           "choices": ["what a", "what", "how", "so"],
           "correct_answer": "what",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
@@ -124,7 +118,6 @@
         {
           "id": 7,
           "text": "Razor visits a barber shop ___",
-          "underlined": [{ "start": 8, "end": 13 }],
           "choices": [
             "to cut his hair",
             "for cutting his har",
@@ -137,7 +130,6 @@
         {
           "id": 8,
           "text": "___ win this grand prix, ___ donate all of my money",
-          "underlined": [{ "start": 8, "end": 13 }],
           "choices": [
             "was I to, I had",
             "had I to, I would",
@@ -150,7 +142,6 @@
         {
           "id": 9,
           "text": "Dani has a beautiful car, ___ ?",
-          "underlined": [{ "start": 8, "end": 13 }],
           "choices": ["hasn't he", "has he", "doesn't he", "does he"],
           "correct_answer": "doesn't he",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
@@ -158,7 +149,6 @@
         {
           "id": 10,
           "text": "___, he's no match for the searing pace of Pecco Bagnaia",
-          "underlined": [{ "start": 8, "end": 13 }],
           "choices": [
             "try as he should",
             "do as he can",
@@ -170,7 +160,68 @@
         }
       ],
 
-      "level_2": [{}],
+      "level_2": [
+        {
+          "text": "It's been a tough week and the police ___ a ton of tasks to do",
+          "choices": ["had had", "have had", "has had", "had have"],
+          "correct_answer": "have had",
+          "explanation": "wlewleo"
+        },
+        {
+          "text": "Lelouch told me that we ___ if only his geass didn't die down",
+          "choices": ["would win", "can win", "could have won", "should have won"],
+          "correct_answer": "could have won",
+          "explanation": "wlewleo"
+        },
+        {
+          "text": "Change into passive voice: The box contains fragile items",
+          "choices": ["no change", "fragile items are contained by the box", "fragile items were contained by the box", "the box are contained by fragile items"],
+          "correct_answer": "no change",
+          "explanation": "wlewleo"
+        },
+        {
+          "text": "We passed by a market ___ economy was in full swing",
+          "choices": ["who", "which", "whom", "whose"],
+          "correct_answer": "whose",
+          "explanation": "wlewleo"
+        },
+        {
+          "text": "I ___ now, If I ___ a week ago",
+          "choices": ["wouldn't have been scolded, had studied", "wouldn't be scolded, had studied", "wouldn't be scolded, were to study", "wouldn't have been scolded, were to study"],
+          "correct_answer": "wouldn't be scolded, had studied",
+          "explanation": "wlewleo"
+        },
+        {
+          "text": "Find the error: Five metres are about the size of that giant robot",
+          "choices": ["metres", "are", "the size", "of that"],
+          "correct_answer": "are",
+          "explanation": "wlewleo"
+        },
+        {
+          "text": "There are five dogs in the field. One of __ is really fluffy",
+          "choices": ["whom", "who", "which", "it"],
+          "correct_answer": "which",
+          "explanation": "wlewleo"
+        },
+        {
+          "text": "The candidate ___ I voted didn't win the election",
+          "choices": ["for who", "to who", "for whom", "to whom"],
+          "correct_answer": "for whom",
+          "explanation": "wlewleo"
+        },
+        {
+          "text": "Indonesian has alphabets ___ 26 letters",
+          "choices": ["consists of", "consisting of", "is consisting of", "that consists of"],
+          "correct_answer": "consisting of",
+          "explanation": "wlewleo"
+        },
+        {
+          "text": "Wang recommended that the bike ___ for quite a hefty price",
+          "choices": ["be sold", "is sold", "to be sold", "was sold"],
+          "correct_answer": "be sold",
+          "explanation": "wlewleo"
+        }
+    ],
       "level_3": [{}]
     },
 
