@@ -92,28 +92,28 @@
           "id": 2,
           "text": "This is ___ we can go. We ___ the same again at this time tomorrow'",
           "choices": [
-            "the farther, will do",
-            "the furthest, will be doing",
-            "the further will have done, ",
-            "the farthest, will be doing"
+            "the farther / will do",
+            "the furthest / will be doing",
+            "the further / will have done, ",
+            "the farthest / will be doing"
           ],
-          "correct_answer": "the farthest, will be doing",
+          "correct_answer": "the farthest / will be doing",
           "explanation": "It should be 'does' instead of 'do' for third-person singular."
         },
 
         {
           "id": 3,
           "text": "He was __ honest and fair man, yet __ horrendous battle took place and into the distance had he gone",
-          "choices": ["a, an", "an, an", "an, a", "a, a"],
-          "correct_answer": "an, a",
+          "choices": ["a / an", "an / an", "an / a", "a / a"],
+          "correct_answer": "an / a",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
         },
 
         {
           "id": 4,
           "text": "Barely ___ money left to set out on a new adventure. Shall we get ___?",
-          "choices": ["some, any", "any, any", "many, some", "any, some"],
-          "correct_answer": "any, some",
+          "choices": ["some / any", "any / any", "many / some", "any / some"],
+          "correct_answer": "any / some",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
         },
 
@@ -155,12 +155,12 @@
           "id": 8,
           "text": "___ win this grand prix, ___ donate all of my money",
           "choices": [
-            "was I to, I had",
-            "had I to, I would",
-            "were I to, I would",
-            "If I was to, I would"
+            "was I to / I had",
+            "had I to / I would",
+            "were I to / I would",
+            "If I was to / I would"
           ],
-          "correct_answer": "were I to, I would",
+          "correct_answer": "were I to / I would",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
         },
 
@@ -174,14 +174,9 @@
 
         {
           "id": 10,
-          "text": "___, he's no match for the searing pace of Pecco Bagnaia",
-          "choices": [
-            "try as he should",
-            "do as he can",
-            "try as he could",
-            "try as he may"
-          ],
-          "correct_answer": "try as he may",
+          "text": "He sits ___ me",
+          "choices": ["besides", "in front", "over", "beside"],
+          "correct_answer": "beside",
           "explanation": "The correct pronoun is 'who' instead of 'which'."
         }
       ],
@@ -228,12 +223,12 @@
         {
           "text": "I ___ now, If I ___ a week ago",
           "choices": [
-            "wouldn't have been scolded, had studied",
-            "wouldn't be scolded, had studied",
-            "wouldn't be scolded, were to study",
-            "wouldn't have been scolded, were to study"
+            "wouldn't have been scolded / had studied",
+            "wouldn't be scolded / had studied",
+            "wouldn't be scolded / were to study",
+            "wouldn't have been scolded / were to study"
           ],
-          "correct_answer": "wouldn't be scolded, had studied",
+          "correct_answer": "wouldn't be scolded / had studied",
           "explanation": "wlewleo"
         },
 
@@ -279,7 +274,118 @@
       ],
       "level_3": [
         {
-          
+          "text": "Out of the final corner ___",
+          "choices": [
+            "Binder comes",
+            "Binder is coming",
+            "is coming Binder",
+            "comes Binder"
+          ],
+          "correct_answer": "comes Binder",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Cari errornya: Having arrived late for practice, a written excuse was needed.",
+          "choices": [
+            "Having arrived",
+            "was needed",
+            "a written excuse",
+            "for practice"
+          ],
+          "correct_answer": "a written excuse",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Alonso seems ___ a tumble at turn five",
+          "choices": [
+            "to have taken",
+            "to take",
+            "to have been taking",
+            "to be taking"
+          ],
+          "correct_answer": "to have taken",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Either of the restaurants ___ cheap enough for us to afford",
+          "choices": ["are", "is"],
+          "correct_answer": "is",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Neither the manager nor the riders ___ to race in Valencia",
+          "choices": ["agree", "agrees", "are agree", "is agree"],
+          "correct_answer": "agree",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Children have difficulty ___ numbers ___ two until the age of three or four.",
+          "choices": ["to grasp / as big as", "in grasping / as many as", "grasping / greater than", "of grasping / less than"],
+          "correct_answer": "grasping / greater than",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Can you tell me ___ ",
+          "choices": ["where the shop is?", "where is the shop?"],
+          "correct_answer": "where the shop is?",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Marquez has set the fastest lap in this race! ___ Iannone",
+          "choices": ["so does", "so is", "as has", "as does"],
+          "correct_answer": "as has",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "___, he's not match for the searing pace of Alex",
+          "choices": [
+            "try as he would",
+            "try as he might",
+            "try as he could",
+            "try as he may"
+          ],
+          "correct_answer": "try as he may",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Sara is making a steady recovery and ___ the hospital by next week",
+          "choices": ["could have left", "is leaving", "will have left", "will leave"],
+          "correct_answer": "will have left",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Man the car, ___ ?",
+          "choices": ["shall we", "will you", "do you", "can you"],
+          "correct_answer": "will you",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "The healthy individual possesses means of arresting minor haemorrhages; if this ___ so trivial cuts ___ to a fatal loss of blood.",
+          "choices": ["was not / have led", "were not / would lead", "is not / led", "would not be / had led"],
+          "correct_answer": "were not / would lead",
+          "explanation": "wlewleo"
+        },
+
+        {
+          "text": "Bacteria are ___ small that they can ___ be seen under a microscope",
+          "choices": ["very / rather", "too / hardly", "so / only", "much / just"],
+          "correct_answer": "so / only",
+          "explanation": "wlewleo"
+        },
+
+        {
+
         }
       ]
     },
