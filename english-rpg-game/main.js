@@ -236,67 +236,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // this function handles the lose page consisting of title and quote
-    function handleGameOver() {
-      function randomQuote() {
-        const getQuotes = contents.story.epilogues.bad_ending.quotes;
-        return getQuotes[Math.floor(Math.random() * getQuotes.length)];
-      }
-      const getTitle = contents.story.epilogues.bad_ending.description_title;
-
-      const createRandomQuotes = randomQuote();
-      const createLoseCondition = generateLoseCondition(
-        contents.story.background,
-        getTitle,
-        createRandomQuotes
-      );
-      document.getElementById("app").innerHTML = createLoseCondition;
-      const nextLosePage = document.querySelector(".next-desc");
-      nextLosePage.addEventListener("click", () => {
-        updateLoseDescription();
-      });
-    }
-
-    // function to continue to the descriptions
-    function updateLoseDescription() {
-      const getDescription =
-        contents.story.epilogues.bad_ending.description[loseConditionIndex].par;
-
-      const loseDescription = generateLoseConditionDescription(
-        contents.story.background,
-        getDescription
-      );
-
-      document.getElementById("app").innerHTML = loseDescription;
-
-      // the button creaated after the within the lose description page will go on the last description and will restart the game
-      const startOver = document.querySelector(".start-over");
-      startOver.addEventListener("click", () => {
-        loseConditionIndex++;
-
-        if (
-          loseConditionIndex >=
-          contents.story.epilogues.bad_ending.description.length
-        ) {
-          alert("game akan dimulai dari awal");
-          function resetGame() {
-            currentQuizAnswers = 0;
-            currentCorrectAnswers = 0;
-            currentQuizQuestions = 0;
-            remainingLives = 3;
-            loseConditionIndex = 0;
-            gameOver = false;
-          }
-          resetGame();
-          setTimeout(() => {
-            dungeon();
-          }, 400);
-        } else {
-          updateLoseDescription();
-        }
-      });
-    }
-
     function dungeonTwo() {
       const firstDungeonText = contents.story.dungeons[1].level;
 
@@ -357,7 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
               currentQuizQuestions = 0;
               currentQuizAnswers = 0;
               currentCorrectAnswers = 0;
-              remainingLives = 3;
+              remainingLives = 5;
               alert("end of questions");
               setTimeout(() => {
                 showReviewPage2();
@@ -379,6 +318,152 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 200);
           }
         });
+      });
+    }
+
+    function dungeonThree() {
+      const firstDungeonText = contents.story.dungeons[2].level;
+
+      const generateThirdDungeon = generateFirstDungeonLevel(
+        contents.story.dungeons[2].background,
+        firstDungeonText
+      );
+      document.getElementById("app").innerHTML = generateThirdDungeon;
+
+      setTimeout(() => {
+        thirdDungeonQuiz();
+      }, 1500);
+    }
+
+    function thirdDungeonQuiz() {
+      if (gameOver) return;
+      const newQuestion3 =
+        contents.story.questions.level_3[currentQuizQuestions].text;
+      const newAnswers3 =
+        contents.story.questions.level_3[currentQuizAnswers].choices;
+
+      const generateQuestions = generateFirstDungeonQuiz(
+        contents.story.dungeons[2].background,
+        newQuestion3
+      );
+
+      document.getElementById("app").innerHTML = generateQuestions;
+      const updateLives = document.querySelector(".life-number");
+      updateLives.textContent = remainingLives;
+
+      const quizSection = document.querySelector(".multiple-choices");
+
+      const singleQuestion = newAnswers3
+        .map((item) => {
+          return `
+        <button class="answer">${item}</button>
+      `;
+        })
+        .join("");
+      quizSection.innerHTML = singleQuestion;
+
+      document.querySelectorAll(".answer").forEach((answerBtn) => {
+        answerBtn.addEventListener("click", () => {
+          const correctAnswer =
+            contents.story.questions.level_3[currentCorrectAnswers]
+              .correct_answer;
+
+          if (answerBtn.textContent === correctAnswer) {
+            answerBtn.style.backgroundColor = "green";
+            answerBtn.style.color = "white";
+            currentQuizQuestions++;
+            currentQuizAnswers++;
+            currentCorrectAnswers++;
+            if (
+              currentQuizQuestions &&
+              currentQuizAnswers >= contents.story.questions.level_3.length
+            ) {
+              currentQuizQuestions = 0;
+              currentQuizAnswers = 0;
+              currentCorrectAnswers = 0;
+              remainingLives = 3;
+              alert("end of questions");
+              setTimeout(() => {
+                showReviewPage3();
+              }, 200);
+              return;
+            }
+          } else {
+            answerBtn.style.backgroundColor = "red";
+            answerBtn.style.color = "white";
+            remainingLives--;
+          }
+
+          if (remainingLives <= 0) {
+            gameOver = true;
+            handleGameOver();
+          } else {
+            setTimeout(() => {
+              thirdDungeonQuiz();
+            }, 200);
+          }
+        });
+      });
+    }
+
+    // this function handles the lose page consisting of title and quote
+    function handleGameOver() {
+      function randomQuote() {
+        const getQuotes = contents.story.epilogues.bad_ending.quotes;
+        return getQuotes[Math.floor(Math.random() * getQuotes.length)];
+      }
+      const getTitle = contents.story.epilogues.bad_ending.description_title;
+
+      const createRandomQuotes = randomQuote();
+      const createLoseCondition = generateLoseCondition(
+        contents.story.background,
+        getTitle,
+        createRandomQuotes
+      );
+      document.getElementById("app").innerHTML = createLoseCondition;
+      const nextLosePage = document.querySelector(".next-desc");
+      nextLosePage.addEventListener("click", () => {
+        updateLoseDescription();
+      });
+    }
+
+    // function to continue to the descriptions
+    function updateLoseDescription() {
+      const getDescription =
+        contents.story.epilogues.bad_ending.description[loseConditionIndex].par;
+
+      const loseDescription = generateLoseConditionDescription(
+        contents.story.background,
+        getDescription
+      );
+
+      document.getElementById("app").innerHTML = loseDescription;
+
+      // the button creaated after the within the lose description page will go on the last description and will restart the game
+      const startOver = document.querySelector(".start-over");
+      startOver.addEventListener("click", () => {
+        loseConditionIndex++;
+
+        if (
+          loseConditionIndex >=
+          contents.story.epilogues.bad_ending.description.length
+        ) {
+          alert("game akan dimulai dari awal");
+          function resetGame() {
+            currentQuizAnswers = 0;
+            currentCorrectAnswers = 0;
+            currentQuizQuestions = 0;
+            remainingLives = 3;
+            loseConditionIndex = 0;
+            gameOver = false;
+          }
+          resetGame();
+          setTimeout(() => {
+            dungeon();
+          }, 400);
+        } else {
+          updateLoseDescription();
+        }
       });
     }
 
@@ -448,6 +533,39 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
+    function showReviewPage3() {
+      const generateBgReview = generateReviewPage(
+        contents.story.dungeons[2].background
+      );
+
+      document.getElementById("app").innerHTML = generateBgReview;
+
+      const createReviewDropdown = contents.story.questions.level_3
+        .map((item) => {
+          return `
+          <div class="explanation">
+            <details>
+              <summary>${item.text}</summary>
+            <div>
+              <h3>${item.correct_answer}</h3>
+              <p>Penjelasan:</p>
+              <p>${item.explanation}</p>
+            </div>
+            </details>
+          </div>
+      `;
+        })
+        .join("");
+
+      document.querySelector(".explanation-wrapper").innerHTML =
+        createReviewDropdown;
+
+      const nextStory = document.querySelector(".next-story");
+      nextStory.addEventListener("click", () => {
+        afterStoryDungeon3();
+      });
+    }
+
     function afterStoryDungeon1() {
       const getAfterStory =
         contents.story.after_dungeon_1_story[currentAfterStoryDungeon1].story;
@@ -493,10 +611,36 @@ document.addEventListener("DOMContentLoaded", () => {
           contents.story.after_dungeon_2_story.length
         ) {
           alert("Kamu akan menghadapi dungeon 3");
-          // return dungeonTwo();
+          return dungeonThree();
         }
 
         afterStoryDungeon2();
+      });
+    }
+
+    function afterStoryDungeon3() {
+      const getAfterStory =
+        contents.story.after_dungeon_2_story[currentAfterStoryDungeon2].story;
+
+      const generateAfterStory = generatePrologue(
+        contents.story.background,
+        getAfterStory
+      );
+      document.getElementById("app").innerHTML = generateAfterStory;
+
+      const nextBtn = document.querySelector(".next");
+      nextBtn.addEventListener("click", () => {
+        currentAfterStoryDungeon2++;
+
+        if (
+          currentAfterStoryDungeon2 >=
+          contents.story.after_dungeon_2_story.length
+        ) {
+          alert("Congrats!");
+          // return dungeonThree();
+        }
+
+        afterStoryDungeon3();
       });
     }
   }
