@@ -3,6 +3,7 @@ import "./styles.scss";
 document.addEventListener("DOMContentLoaded", () => {
   let currentPrologueIndex = 0;
   let currentAfterStoryDungeon1 = 0;
+  let currentAfterStoryDungeon2 = 0;
   let currentQuizQuestions = 0;
   let currentQuizAnswers = 0;
   let currentCorrectAnswers = 0;
@@ -296,65 +297,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    function showReviewPage() {
-      const generateBgReview = generateReviewPage(
-        contents.story.dungeons[0].background
-      );
-
-      document.getElementById("app").innerHTML = generateBgReview;
-
-      const createReviewDropdown = contents.story.questions.level_1
-        .map((item) => {
-          return `
-          <div class="explanation">
-            <details>
-              <summary>${item.text}</summary>
-            <div>
-              <h3>${item.correct_answer}</h3>
-              <p>Penjelasan:</p>
-              <p>${item.explanation}</p>
-            </div>
-            </details>
-          </div>
-      `;
-        })
-        .join("");
-
-      document.querySelector(".explanation-wrapper").innerHTML =
-        createReviewDropdown;
-
-      const nextStory = document.querySelector(".next-story");
-      nextStory.addEventListener("click", () => {
-        afterStoryDungeon1();
-      });
-    }
-
-    function afterStoryDungeon1() {
-      const getAfterStory =
-        contents.story.after_dungeon_1_story[currentAfterStoryDungeon1].story;
-
-      const generateAfterStory = generatePrologue(
-        contents.story.background,
-        getAfterStory
-      );
-      document.getElementById("app").innerHTML = generateAfterStory;
-
-      const nextBtn = document.querySelector(".next");
-      nextBtn.addEventListener("click", () => {
-        currentAfterStoryDungeon1++;
-
-        if (
-          currentAfterStoryDungeon1 >=
-          contents.story.after_dungeon_1_story.length
-        ) {
-          alert("Kamu akan menghadapi dungeon 2");
-          return dungeonTwo();
-        }
-
-        afterStoryDungeon1();
-      });
-    }
-
     function dungeonTwo() {
       const firstDungeonText = contents.story.dungeons[1].level;
 
@@ -412,19 +354,16 @@ document.addEventListener("DOMContentLoaded", () => {
               currentQuizQuestions &&
               currentQuizAnswers >= contents.story.questions.level_2.length
             ) {
+              currentQuizQuestions = 0;
+              currentQuizAnswers = 0;
+              currentCorrectAnswers = 0;
+              remainingLives = 3;
               alert("end of questions");
-              // currentQuizQuestions = 0;
-              // currentQuizAnswers = 0;
-              // currentCorrectAnswers = 0;
-              // remainingLives = 3;
-              // setTimeout(() => {
-              //   showReviewPage();
-              // }, 200);
-              // return;
+              setTimeout(() => {
+                showReviewPage2();
+              }, 200);
+              return;
             }
-            // setTimeout(() => {
-            //   secondDungeonQuiz();
-            // }, 400);
           } else {
             answerBtn.style.backgroundColor = "red";
             answerBtn.style.color = "white";
@@ -440,6 +379,124 @@ document.addEventListener("DOMContentLoaded", () => {
             }, 200);
           }
         });
+      });
+    }
+
+    function showReviewPage() {
+      const generateBgReview = generateReviewPage(
+        contents.story.dungeons[0].background
+      );
+
+      document.getElementById("app").innerHTML = generateBgReview;
+
+      const createReviewDropdown = contents.story.questions.level_1
+        .map((item) => {
+          return `
+          <div class="explanation">
+            <details>
+              <summary>${item.text}</summary>
+            <div>
+              <h3>${item.correct_answer}</h3>
+              <p>Penjelasan:</p>
+              <p>${item.explanation}</p>
+            </div>
+            </details>
+          </div>
+      `;
+        })
+        .join("");
+
+      document.querySelector(".explanation-wrapper").innerHTML =
+        createReviewDropdown;
+
+      const nextStory = document.querySelector(".next-story");
+      nextStory.addEventListener("click", () => {
+        afterStoryDungeon1();
+      });
+    }
+
+    function showReviewPage2() {
+      const generateBgReview = generateReviewPage(
+        contents.story.dungeons[1].background
+      );
+
+      document.getElementById("app").innerHTML = generateBgReview;
+
+      const createReviewDropdown = contents.story.questions.level_2
+        .map((item) => {
+          return `
+          <div class="explanation">
+            <details>
+              <summary>${item.text}</summary>
+            <div>
+              <h3>${item.correct_answer}</h3>
+              <p>Penjelasan:</p>
+              <p>${item.explanation}</p>
+            </div>
+            </details>
+          </div>
+      `;
+        })
+        .join("");
+
+      document.querySelector(".explanation-wrapper").innerHTML =
+        createReviewDropdown;
+
+      const nextStory = document.querySelector(".next-story");
+      nextStory.addEventListener("click", () => {
+        afterStoryDungeon2();
+      });
+    }
+
+    function afterStoryDungeon1() {
+      const getAfterStory =
+        contents.story.after_dungeon_1_story[currentAfterStoryDungeon1].story;
+
+      const generateAfterStory = generatePrologue(
+        contents.story.background,
+        getAfterStory
+      );
+      document.getElementById("app").innerHTML = generateAfterStory;
+
+      const nextBtn = document.querySelector(".next");
+      nextBtn.addEventListener("click", () => {
+        currentAfterStoryDungeon1++;
+
+        if (
+          currentAfterStoryDungeon1 >=
+          contents.story.after_dungeon_1_story.length
+        ) {
+          alert("Kamu akan menghadapi dungeon 2");
+          return dungeonTwo();
+        }
+
+        afterStoryDungeon1();
+      });
+    }
+
+    function afterStoryDungeon2() {
+      const getAfterStory =
+        contents.story.after_dungeon_2_story[currentAfterStoryDungeon2].story;
+
+      const generateAfterStory = generatePrologue(
+        contents.story.background,
+        getAfterStory
+      );
+      document.getElementById("app").innerHTML = generateAfterStory;
+
+      const nextBtn = document.querySelector(".next");
+      nextBtn.addEventListener("click", () => {
+        currentAfterStoryDungeon2++;
+
+        if (
+          currentAfterStoryDungeon2 >=
+          contents.story.after_dungeon_2_story.length
+        ) {
+          alert("Kamu akan menghadapi dungeon 3");
+          // return dungeonTwo();
+        }
+
+        afterStoryDungeon2();
       });
     }
   }
