@@ -58,6 +58,20 @@
         "story": "Berbekal dua artefak yang telah ia amankan, serta dukungan tak tergoyahkan dari rakyatnya, sang pahlawan melangkah menuju kegelapan untuk menjemput Eclipse Blade. Di ujung perjalanan ini, nasib Caldoria akan ditentukan: apakah kegelapan akan disegel untuk selamanya atau justru menguasai segalanya."
       }
     ],
+    "after_dungeon_3_story": [
+      {
+        "story": "Setelah sang pahlawan menaklukkan dungeon ketiga, yang paling berbahaya dan tersembunyi di kedalaman hutan purba Caldoria, harapan baru muncul di seluruh kerajaan. Dengan mengalahkan penjaga terakhir dan merebut Eclipse Stone, sebuah artefak kuno yang menyatukan kekuatan cahaya dan kegelapan, sang pahlawan berhasil mengakhiri ancaman yang selama ini membayangi seluruh negeri."
+      },
+      {
+        "story": "Dengan Eclipse Stone di tangan, sang pahlawan berdiri di puncak menara terakhir dungeon, menyaksikan kabut kegelapan yang perlahan menghilang dari seluruh kerajaan. Dengan setiap langkah keluar dari dungeon, seakan beban kegelapan terangkat, langit pun kembali cerah, dan burung-burung mulai berkicau menyambut fajar kemenangan. Seluruh Caldoria, yang dulu dicekam ketakutan, kini merasakan kebebasan. Warga berbondong-bondong menyambut sang pahlawan, melemparkan bunga dan menyanyikan lagu-lagu pujian yang menceritakan keberanian yang telah mengembalikan kedamaian."
+      },
+      {
+        "story": "Setelah hari-hari gelap berlalu, kehidupan di Caldoria kembali seperti sediakala. Tetapi, bagi sang pahlawan, kedamaian membawa tantangan baru: membangun kembali kehidupannya yang lama setelah petualangan penuh bahaya. Ia diberi gelar kehormatan dan tanah sebagai hadiah dari kerajaan, namun kesederhanaan dan keteguhan hatinya mendorongnya untuk hidup di desa kecil yang dikelilingi oleh alam, jauh dari hiruk-pikuk politik dan kota."
+      },
+      {
+        "story": "Legenda tentang pahlawan ini menyebar hingga ke kerajaan-kerajaan lain, dan banyak petualang muda yang mencari inspirasi darinya. Kadang-kadang, pahlawan ini akan menerima tamu—muda-mudi yang mendengar kisahnya dan ingin belajar tentang keberanian, kesetiaan, dan kedamaian sejati."
+      }
+    ],
     "dungeons": [
       {
         "level": "Dungeon Level 1",
@@ -331,9 +345,9 @@
         },
 
         {
-          "text": "Can you tell me ___ ",
-          "choices": ["where the shop is?", "where is the shop?"],
-          "correct_answer": "where the shop is?",
+          "text": "The healthy individual possesses means of arresting minor haemorrhages; if this ___ so trivial cuts ___ to a fatal loss of blood.",
+          "choices": ["was not / have led", "were not / would lead", "is not / led", "would not be / had led"],
+          "correct_answer": "were not / would lead",
           "explanation": "wlewleo"
         },
 
@@ -361,31 +375,6 @@
           "choices": ["could have left", "is leaving", "will have left", "will leave"],
           "correct_answer": "will have left",
           "explanation": "wlewleo"
-        },
-
-        {
-          "text": "Man the car, ___ ?",
-          "choices": ["shall we", "will you", "do you", "can you"],
-          "correct_answer": "will you",
-          "explanation": "wlewleo"
-        },
-
-        {
-          "text": "The healthy individual possesses means of arresting minor haemorrhages; if this ___ so trivial cuts ___ to a fatal loss of blood.",
-          "choices": ["was not / have led", "were not / would lead", "is not / led", "would not be / had led"],
-          "correct_answer": "were not / would lead",
-          "explanation": "wlewleo"
-        },
-
-        {
-          "text": "Bacteria are ___ small that they can ___ be seen under a microscope",
-          "choices": ["very / rather", "too / hardly", "so / only", "much / just"],
-          "correct_answer": "so / only",
-          "explanation": "wlewleo"
-        },
-
-        {
-
         }
       ]
     },
