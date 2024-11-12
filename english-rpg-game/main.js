@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentPrologueIndex = 0;
   let currentAfterStoryDungeon1 = 0;
   let currentAfterStoryDungeon2 = 0;
+  let goodEnding = 0;
   let currentQuizQuestions = 0;
   let currentQuizAnswers = 0;
   let currentCorrectAnswers = 0;
@@ -78,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       <div class="lose-page">
         <h1>${title}</h1>
-        <p>${quote}</p>
+        <p class="quote">${quote}</p>
         <button class="next-desc">Selanjutnya</button>
       </div>
     </div>
@@ -92,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <img src="${bgFirstDungeon}" alt="dungeon level 1" class="background"> 
         </div>
       <div class="lose-page">
-        <p>${description}</p>
+        <p class="lose-desc">${description}</p>
         <button class="start-over">Selanjutnya</button>
       </div>
     </div>
@@ -117,13 +118,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const response = await fetch("content.json");
     const contents = await response.json();
 
-    const mainMenu = generateMainMenu(contents.story.background);
-    document.getElementById("app").innerHTML = mainMenu;
-    const Playbtn = document.querySelector(".play-btn");
+    function mainMenu() {
+      const mainMenu = generateMainMenu(contents.story.background);
+      document.getElementById("app").innerHTML = mainMenu;
+      const Playbtn = document.querySelector(".play-btn");
 
-    Playbtn.addEventListener("click", () => {
-      mainStory();
-    });
+      Playbtn.addEventListener("click", () => {
+        mainStory();
+      });
+    }
 
     function mainStory() {
       // get background from json
@@ -226,6 +229,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
           if (remainingLives <= 0) {
             gameOver = true;
+            currentQuizQuestions = 0;
+            currentQuizAnswers = 0;
+            currentCorrectAnswers = 0;
+            currentAfterStoryDungeon1 = 0;
+            currentAfterStoryDungeon2 = 0;
+            remainingLives = 3;
             handleGameOver();
           } else {
             setTimeout(() => {
@@ -296,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
               currentQuizQuestions = 0;
               currentQuizAnswers = 0;
               currentCorrectAnswers = 0;
-              remainingLives = 5;
+              remainingLives = 3;
               alert("end of questions");
               setTimeout(() => {
                 showReviewPage2();
@@ -311,7 +320,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
           if (remainingLives <= 0) {
             gameOver = true;
-            handleGameOver();
+            currentQuizQuestions = 0;
+            currentQuizAnswers = 0;
+            currentCorrectAnswers = 0;
+            currentAfterStoryDungeon1 = 0;
+            currentAfterStoryDungeon2 = 0;
+            remainingLives = 3;
+            handleGameOver2();
           } else {
             setTimeout(() => {
               secondDungeonQuiz();
@@ -396,7 +411,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           if (remainingLives <= 0) {
             gameOver = true;
-            handleGameOver();
+            handleGameOver3();
           } else {
             setTimeout(() => {
               thirdDungeonQuiz();
@@ -424,6 +439,46 @@ document.addEventListener("DOMContentLoaded", () => {
       const nextLosePage = document.querySelector(".next-desc");
       nextLosePage.addEventListener("click", () => {
         updateLoseDescription();
+      });
+    }
+
+    function handleGameOver2() {
+      function randomQuote() {
+        const getQuotes = contents.story.epilogues.bad_ending.quotes;
+        return getQuotes[Math.floor(Math.random() * getQuotes.length)];
+      }
+      const getTitle = contents.story.epilogues.bad_ending.description_title;
+
+      const createRandomQuotes = randomQuote();
+      const createLoseCondition = generateLoseCondition(
+        contents.story.background,
+        getTitle,
+        createRandomQuotes
+      );
+      document.getElementById("app").innerHTML = createLoseCondition;
+      const nextLosePage = document.querySelector(".next-desc");
+      nextLosePage.addEventListener("click", () => {
+        updateLoseDescription2();
+      });
+    }
+
+    function handleGameOver3() {
+      function randomQuote() {
+        const getQuotes = contents.story.epilogues.bad_ending.quotes;
+        return getQuotes[Math.floor(Math.random() * getQuotes.length)];
+      }
+      const getTitle = contents.story.epilogues.bad_ending.description_title;
+
+      const createRandomQuotes = randomQuote();
+      const createLoseCondition = generateLoseCondition(
+        contents.story.background,
+        getTitle,
+        createRandomQuotes
+      );
+      document.getElementById("app").innerHTML = createLoseCondition;
+      const nextLosePage = document.querySelector(".next-desc");
+      nextLosePage.addEventListener("click", () => {
+        updateLoseDescription3();
       });
     }
 
@@ -463,6 +518,84 @@ document.addEventListener("DOMContentLoaded", () => {
           }, 400);
         } else {
           updateLoseDescription();
+        }
+      });
+    }
+
+    function updateLoseDescription2() {
+      const getDescription =
+        contents.story.epilogues.bad_ending.description[loseConditionIndex].par;
+
+      const loseDescription = generateLoseConditionDescription(
+        contents.story.background,
+        getDescription
+      );
+
+      document.getElementById("app").innerHTML = loseDescription;
+
+      // the button creaated after the within the lose description page will go on the last description and will restart the game
+      const startOver = document.querySelector(".start-over");
+      startOver.addEventListener("click", () => {
+        loseConditionIndex++;
+
+        if (
+          loseConditionIndex >=
+          contents.story.epilogues.bad_ending.description.length
+        ) {
+          alert("game akan dimulai dari awal");
+          function resetGame() {
+            currentQuizAnswers = 0;
+            currentCorrectAnswers = 0;
+            currentQuizQuestions = 0;
+            remainingLives = 3;
+            loseConditionIndex = 0;
+            gameOver = false;
+          }
+          resetGame();
+          setTimeout(() => {
+            dungeonTwo();
+          }, 400);
+        } else {
+          updateLoseDescription2();
+        }
+      });
+    }
+
+    function updateLoseDescription3() {
+      const getDescription =
+        contents.story.epilogues.bad_ending.description[loseConditionIndex].par;
+
+      const loseDescription = generateLoseConditionDescription(
+        contents.story.background,
+        getDescription
+      );
+
+      document.getElementById("app").innerHTML = loseDescription;
+
+      // the button creaated after the within the lose description page will go on the last description and will restart the game
+      const startOver = document.querySelector(".start-over");
+      startOver.addEventListener("click", () => {
+        loseConditionIndex++;
+
+        if (
+          loseConditionIndex >=
+          contents.story.epilogues.bad_ending.description.length
+        ) {
+          alert("game akan dimulai dari awal");
+          function resetGame() {
+            currentQuizAnswers = 0;
+            currentCorrectAnswers = 0;
+            currentQuizQuestions = 0;
+            remainingLives = 3;
+            loseConditionIndex = 0;
+            gameOver = false;
+          }
+          resetGame();
+          setTimeout(() => {
+            dungeonThree();
+          }, 400);
+        } else {
+          updateLoseDescription3();
         }
       });
     }
@@ -620,7 +753,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function afterStoryDungeon3() {
       const getAfterStory =
-        contents.story.after_dungeon_2_story[currentAfterStoryDungeon2].story;
+        contents.story.after_dungeon_3_story[goodEnding].story;
 
       const generateAfterStory = generatePrologue(
         contents.story.background,
@@ -630,19 +763,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const nextBtn = document.querySelector(".next");
       nextBtn.addEventListener("click", () => {
-        currentAfterStoryDungeon2++;
+        goodEnding++;
 
-        if (
-          currentAfterStoryDungeon2 >=
-          contents.story.after_dungeon_2_story.length
-        ) {
-          alert("Congrats!");
-          // return dungeonThree();
+        if (goodEnding >= contents.story.after_dungeon_3_story.length) {
+          alert("Congrats! You have won the game!");
+          // const feedback = `
+          //   <div>
+          //     <h1>Thank you for playing!</h1>
+          //     <p><a href="#">Feedback here</a></p>
+          //   </div>
+          // `
+          // currentPrologueIndex = 0;
+          // currentAfterStoryDungeon1 = 0;
+          // currentAfterStoryDungeon2 = 0;
+          // goodEnding = 0;
+          // currentQuizQuestions = 0;
+          // currentQuizAnswers = 0;
+          // currentCorrectAnswers = 0;
+          // loseConditionIndex = 0;
+          // gameOver = false;
+          // remainingLives = 3;
+          // return mainMenu();
         }
 
         afterStoryDungeon3();
       });
     }
+
+    mainMenu();
   }
 
   getData();
