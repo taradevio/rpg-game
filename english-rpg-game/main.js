@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
         <div class="quiz">
           <h2 class="title">${questions}</h2>
-        <div class="multiple-choices"></div>
+          <div class="multiple-choices"></div>
         </div>
         <div class="life-icon">
           <h3 class="index">${currentQuizQuestions + 1} / 10</h3>
