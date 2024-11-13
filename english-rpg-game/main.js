@@ -37,7 +37,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <button class="next">Selanjutnya</button>
       </div>
     </div>
-    `;
+    `;setTimeout(() => {
+      alert("nyawamu habis")
+    }, 200)
+    failureSound();
   }
 
   function generateFirstDungeonLevel(bgFirstDungeon, openingDungeon) {
@@ -217,8 +220,12 @@ document.addEventListener("DOMContentLoaded", () => {
               currentCorrectAnswers = 0;
               remainingLives = 3;
               setTimeout(() => {
-                showReviewPage();
+                alert("selamat! kamu berhasil menyelesaikan dungeon 1!")
               }, 200);
+              victorySound();
+              setTimeout(() => {
+                showReviewPage();
+              }, 500);
               return;
             }
           } else {
@@ -235,7 +242,13 @@ document.addEventListener("DOMContentLoaded", () => {
             currentAfterStoryDungeon1 = 0;
             currentAfterStoryDungeon2 = 0;
             remainingLives = 3;
-            handleGameOver();
+            setTimeout(() => {
+              alert("nyawamu habis")
+            }, 200);
+            failureSound();
+            setTimeout(() => {
+              handleGameOver();
+            }, 500);
           } else {
             setTimeout(() => {
               firstDungeonQuiz();
@@ -306,10 +319,13 @@ document.addEventListener("DOMContentLoaded", () => {
               currentQuizAnswers = 0;
               currentCorrectAnswers = 0;
               remainingLives = 3;
-              alert("end of questions");
+              setTimeout(() => {
+                alert("selamat! kamu berhasil menyelesaikan dungeon 2!");
+              }, 200);
+              victorySound();
               setTimeout(() => {
                 showReviewPage2();
-              }, 200);
+              }, 500);
               return;
             }
           } else {
@@ -326,7 +342,13 @@ document.addEventListener("DOMContentLoaded", () => {
             currentAfterStoryDungeon1 = 0;
             currentAfterStoryDungeon2 = 0;
             remainingLives = 3;
-            handleGameOver2();
+            setTimeout(() => {
+              alert("nyawamu habis")
+            }, 200);
+            failureSound();
+            setTimeout(() => {
+              handleGameOver2();
+            }, 500);
           } else {
             setTimeout(() => {
               secondDungeonQuiz();
@@ -397,10 +419,13 @@ document.addEventListener("DOMContentLoaded", () => {
               currentQuizAnswers = 0;
               currentCorrectAnswers = 0;
               remainingLives = 3;
-              alert("end of questions");
+              setTimeout(() => {
+                alert("selamat! kamu berhasil menyelesaikan dungeon 3!");
+              }, 200);
+              victorySound();
               setTimeout(() => {
                 showReviewPage3();
-              }, 200);
+              }, 500);
               return;
             }
           } else {
@@ -411,7 +436,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
           if (remainingLives <= 0) {
             gameOver = true;
-            handleGameOver3();
+            setTimeout(() => {
+              alert("nyawamu habis")
+            }, 200);
+            failureSound();
+            setTimeout(() => {
+              handleGameOver3();
+            }, 500);
           } else {
             setTimeout(() => {
               thirdDungeonQuiz();
@@ -419,6 +450,16 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       });
+    }
+
+    function victorySound() {
+      const victoryAudio = new Audio('/assets/victory-sound.wav');
+      victoryAudio.play();
+    }
+
+    function failureSound() {
+      const failureAudio = new Audio('/assets/failure-sound.wav');
+      failureAudio.play();
     }
 
     // this function handles the lose page consisting of title and quote
