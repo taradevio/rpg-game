@@ -654,10 +654,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="explanation">
             <details>
               <summary>${item.text}</summary>
-            <div>
+            <div class="explanation-content-wrapper">
               <h3>${item.correct_answer}</h3>
-              <p>Penjelasan:</p>
-              <p>${item.explanation}</p>
+              <p class="explanation-content-title">Penjelasan:</p>
+              <p class="explanation-content">${item.explanation}</p>
             </div>
             </details>
           </div>
