@@ -1,6 +1,6 @@
 $font-color: #f5f5f5;
 $very-small-layout: 360px;
-$small-layout: 390px;
+$small-layout: 400px;
 $medium-layout: 640px;
 $big-layout: 850px;
 * {
@@ -254,7 +254,7 @@ $big-layout: 850px;
         transform: translate(-50%, -50%);
 
         .text-prologue {
-          font-size: 1.2rem;
+          font-size: 1.25rem;
           padding-inline: 0.6rem;
         }
 
@@ -281,7 +281,7 @@ $big-layout: 850px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 1rem 12.5em;
+        padding: 1rem 16em;
         position: absolute;
         top: 0;
         left: 0;
@@ -298,16 +298,16 @@ $big-layout: 850px;
         position: absolute;
         z-index: 1;
         top: 50%;
-        left: 55%;
-        transform: translate(-60%, -50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: $font-color;
-        padding-inline: 1rem;
+        padding-inline: 2.5rem;
 
         .multiple-choices {
           width: 100%;
 
           .answer {
-            margin-inline: 0.3rem;
+            font-size: 1rem;
           }
         }
       }
@@ -342,6 +342,24 @@ $big-layout: 850px;
               cursor: pointer;
             }
           }
+
+          .explanation-content-wrapper {
+            margin-inline: 0.5rem;
+
+            h3 {
+              font-size: 1.7rem;
+              text-decoration: underline;
+            }
+
+            .explanation-content-title {
+              font-style: italic;
+              margin-top: 0.3rem;
+            }
+            .explanation-content {
+              margin-top: 0.3rem;
+              line-height: 1.2;
+            }
+          }
         }
       }
     }
@@ -371,7 +389,7 @@ $big-layout: 850px;
         transform: translate(-50%, -50%);
 
         .text-prologue {
-          font-size: 1.3rem;
+          font-size: 1.4rem;
         }
 
         h1 {
@@ -396,7 +414,7 @@ $big-layout: 850px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 1rem 12em;
+        padding: 1rem 14.5em;
         position: absolute;
         top: 0;
         left: 0;
@@ -416,12 +434,15 @@ $big-layout: 850px;
         left: 55%;
         transform: translate(-60%, -50%);
         color: $font-color;
+        padding-inline: 1rem;
+        font-size: 1.1rem;
 
         .multiple-choices {
           width: 100%;
 
           .answer {
             margin-inline: 0.3rem;
+            font-size: 1.1rem;
           }
         }
       }
@@ -440,7 +461,7 @@ $big-layout: 850px;
         height: 100vh;
 
         .explanation {
-          width: 350px;
+          width: 370px;
           text-align: justify;
           margin: 0 auto;
 
@@ -448,7 +469,7 @@ $big-layout: 850px;
             padding: 0.2rem 0;
             padding-inline: 0.8rem;
             margin-block: 0.6rem;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             line-height: 1;
 
             summary {
@@ -456,6 +477,27 @@ $big-layout: 850px;
               cursor: pointer;
             }
           }
+
+          .explanation-content-wrapper {
+            margin-inline: 0.5rem;
+
+            h3 {
+              font-size: 1.7rem;
+              text-decoration: underline;
+            }
+
+            .explanation-content-title {
+              font-style: italic;
+              margin-top: 0.3rem;
+            }
+            .explanation-content {
+              margin-top: 0.3rem;
+              line-height: 1.2;
+            }
+          }
+        }
+        .next-story {
+          font-size: 1.2rem;
         }
       }
     }
