@@ -201,7 +201,7 @@
           "text": "It's only Monday and already, the police ___ a ton of tasks to do",
           "choices": ["had had", "have had", "has had", "had have"],
           "correct_answer": "have had",
-          "explanation": "wlewleo"
+          "explanation": "Pertama, perlu diperjelas dulu kalo the police itu selalu plural karena yang digambarkan itu bukan polisi secara individu, namun secara kelompok. Kedua, kenapa pake have had? Katakanlah waktu bicara dari konteks di atas jam 12 siang, maka polisi dari pagi entah jam berapa sampe siang sekarang, dengan durasi lebih dari 6 jam, asumsi polisi sudah kerja sebelum subuh, udah nerima banyak job.  Kalo masih bingung gini: have had itu, kalo menurutku cara lain mengatakan verb aslinya. Eh, gimana sih? 'had yang setelah 'have' itu menggantikan peran dari verb lain. Bisa diganti menjadi 'received' contohnya'. So, ... the police have received a ton of tasks to do. Contoh lainnya: 'I have had breakfast = I have eaten breakfast atau I have had a headache = I have experienced a headache'"
         },
 
         {
@@ -210,14 +210,14 @@
             "would win",
             "can win",
             "could have won",
-            "should have won"
+            "should win"
           ],
           "correct_answer": "could have won",
-          "explanation": "wlewleo"
+          "explanation": "could have, should have, would have itu intinya sesuatu yang 'harusnya' bisa dilakukan, tapi realitanya kagak. Mungkin bisa diibaratkan kayak gini: Ada orang beli sayur, tapi pas beli dia bingung yang mana, sampe rumah menggerutu dia, 'lah, harusnya tadi beli yang itu yak'. Nah, konsepnya sama kayak gitu. "
         },
 
         {
-          "text": "Change into passive voice: The box contains fragile items. nanti ini diganti",
+          "text": "Change into passive voice: The box contains fragile items.",
           "choices": [
             "no change",
             "fragile items are contained by the box",
@@ -225,14 +225,14 @@
             "the box are contained by fragile items"
           ],
           "correct_answer": "no change",
-          "explanation": "wlewleo"
+          "explanation": "kata kerja 'contains' menggambarkan kondisi atau fakta (state), bukan aksi. Kalau diubah ke passive, maknanya jadi aneh dan nggak natural. Ketika 'contain' berubah menjadi passive, maknanya berubah menjadi 'ditempatkan/dimasukkan ke dalam tempat tertentu, bukan menggambarkan keadaan barang tersebut di dalam'"
         },
 
         {
           "text": "We passed by a market ___ economy was in full swing",
           "choices": ["who", "which", "whom", "whose"],
           "correct_answer": "whose",
-          "explanation": "wlewleo"
+          "explanation": "whose itu menunjukkan kepemilikan(-nya). 'Kita lewat pasar yang ekonomiNYA...' Who itu sebelumnya harus subject manusia dan setelahnya harus verb, which itu mirip dengan who, cuman subjectnya itu benda, whom itu setelahnya diikuti pronoun"
         },
 
         {
@@ -244,28 +244,28 @@
             "wouldn't have been scolded / were to study"
           ],
           "correct_answer": "wouldn't be scolded / had studied",
-          "explanation": "wlewleo"
+          "explanation": "Ini mixed conditional. Salah satu fiturnya adalah kondisi masa lalu memengaruhi hasil masa sekarang. Berdasar konteks di atas si pelaku dimarahi, terus dia bilang, 'gue nggak akan dimarahi kalo seminggu yang lalu gue belajar. Jadi, tindakan di masa lalu = tidak belajar memengaruhi hasil di masa sekarang = dimarahi'"
         },
 
         {
           "text": "Find the error: Five metres are about the size of that giant robot",
           "choices": ["metres", "are", "the size", "of that"],
           "correct_answer": "are",
-          "explanation": "wlewleo"
+          "explanation": "Jarak itu dianggap singular mau berapa ratus jaraknya, begitu juga uang, waktu, dan berat. Contoh: 'one million dollars is a huge amount of money' atau 'five days is enough for us'"
         },
 
         {
           "text": "There are five dogs in the field. One of __ is really fluffy",
           "choices": ["whom", "who", "which", "it"],
           "correct_answer": "which",
-          "explanation": "wlewleo"
+          "explanation": "kenapa which? karena dia merujuk pada anjing dan anjing itu hewan. Kalau pake whom itu rujukannya harus manusia"
         },
 
         {
           "text": "The candidate ___ I voted didn't win the election",
           "choices": ["for who", "to who", "for whom", "to whom"],
           "correct_answer": "for whom",
-          "explanation": "wlewleo"
+          "explanation": "Sebenarnya kalimat di atas begini: The candidate I voted for didn't win the election, cuman preposisi itu bisa diubah posisinya ke depan. Kenapa pake whom? Pastinya karena subject sebelumnya orang dan diikuti oleh pronoun."
         },
 
         {
@@ -277,14 +277,14 @@
             "that consists of"
           ],
           "correct_answer": "consisting of",
-          "explanation": "wlewleo"
+          "explanation": "Ini adalah reduced adjective clause. Kalimat sebenarnya begini: 'Indonesian has alphabets that/which consist of 26 letters'. Kalo kalimatnya aktif, reduce ini pake -ing, kalo passive, pake verb 3. Contoh: 'Marquez, who has been defeated in the final round, finally retires = Marquez, defeated in the final round, finally retires'"
         },
 
         {
           "text": "Wang recommended that the bike ___ for quite a hefty price",
           "choices": ["be sold", "is sold", "to be sold", "was sold"],
           "correct_answer": "be sold",
-          "explanation": "wlewleo"
+          "explanation": "Kalimat di atas adalah subjunctive mood ditunjukkan dengan verb 'recommended' yang menjadi salah satu ciri subjunctive. Kenapa be sold? Karena ini sebenarnya passive, 'that the bike is sold'. Kalaupun aktif maka = Wang recommended that he sell the bike. Tanpa suffix -s"
         }
       ],
       "level_3": [
