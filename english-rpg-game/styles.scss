@@ -209,6 +209,24 @@ $big-layout: 850px;
             cursor: pointer;
           }
         }
+
+        .explanation-content-wrapper {
+          margin-inline: 0.5rem;
+
+          h3 {
+            font-size: 1.7rem;
+            text-decoration: underline;
+          }
+
+          .explanation-content-title {
+            font-style: italic;
+            margin-top: 0.3rem;
+          }
+          .explanation-content {
+            margin-top: 0.3rem;
+            line-height: 1.75;
+          }
+        }
       }
 
       .next-story {
@@ -239,6 +257,10 @@ $big-layout: 850px;
     .quiz-container {
       .opening-text {
         width: 50ch;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
 
         .getter {
           font-size: 1.5rem;
@@ -254,7 +276,7 @@ $big-layout: 850px;
         transform: translate(-50%, -50%);
 
         .text-prologue {
-          font-size: 1.25rem;
+          font-size: 1.3rem;
           padding-inline: 0.6rem;
         }
 
