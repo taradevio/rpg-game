@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", () => {
         firstDungeonText
       );
       document.getElementById("app").innerHTML = generateFirstDungeon;
-
+      alert("Kamu akan menghadapi dungeon 1")
       setTimeout(() => {
         firstDungeonQuiz();
       }, 1500);
