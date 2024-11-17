@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function getData() {
-    const response = await fetch("content.json");
+    const response = await fetch("/content.json");
     const contents = await response.json();
 
     function mainMenu() {
