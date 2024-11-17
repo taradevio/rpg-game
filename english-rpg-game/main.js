@@ -118,8 +118,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function getData() {
-    const response = await fetch("/content.json");
+    const response = await fetch("/content.json", {
+      method: 'GET',
+      headers: {
+        Accept: 'application/json',
+      }
+    });
     const contents = await response.json();
+    console.log(contents);
 
     function mainMenu() {
       const mainMenu = generateMainMenu(contents.story.background);
