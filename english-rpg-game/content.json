@@ -4,72 +4,133 @@
     "prologue": [
       {
         "id": 1,
-        "story": "Alkisah, di sebuah negeri yang luas dan makmur, berdirilah Kerajaan Caldoria. Kerajaan ini terkenal akan kedamaiannya yang abadi, di mana setiap sudut kota dan desa berselimut ketenteraman. Rakyat hidup sejahtera, hasil bumi melimpah, dan pasar-pasar dipenuhi pedagang yang datang dari negeri jauh. Keadaan politik kerajaan sangatlah stabil, berkat aliansi kuat dengan kerajaan-kerajaan tetangga yang selama ini menjadi mitra dagang sekaligus pelindung tak resmi. Namun, di balik kedamaian itu, terdapat kelemahan yang tak terlihat oleh banyak mata—militer Caldoria terlampau lemah. Mereka bergantung sepenuhnya pada hubungan dagang dan aliansi diplomatik untuk melindungi tanah mereka."
+        "story": "Di sebuah dunia yang belum bernama—atau mungkin pernah dinamai tapi sudah dilupakan—terbentang dataran luas penuh keajaiban dan bahaya. Dunia ini memiliki semua yang kau bayangkan: pegunungan berkabut yang memeluk langit, hutan purba yang lebih tua dari legenda, dan reruntuhan kuno yang tak pernah kehilangan misterinya. Tapi yang membuat dunia ini berbeda dari dongeng lainnya adalah tiga artefak."
       },
 
       {
         "id": 2,
-        "story": "Di bawah pimpinan Raja Caldoria yang bijaksana, rakyat yakin bahwa kedamaian ini akan bertahan selamanya. Namun, kedamaian tersebut mulai terguncang ketika kabar mengerikan datang dari pelosok negeri. Dari dasar bumi yang tak tersentuh selama berabad-abad, bangkitlah dungeon-dungeon kuno—penjara bagi makhluk-makhluk kegelapan yang terlupakan oleh sejarah. Satu per satu, pintu-pintu dungeon terbuka, dan dari dalamnya, keluar makhluk-makhluk buas yang segera menebar teror di antara rakyat. Desa-desa hancur, ladang-ladang dirusak, dan kota-kota kecil mulai merasakan ketakutan yang belum pernah mereka kenal sebelumnya."
+        "story": "Konon, artefak itu bukan sekadar barang antik. Mereka adalah kunci, tapi kunci untuk apa? Ada yang bilang kunci menuju kekuatan tak terbatas, ada juga yang percaya itu kunci untuk menutup pintu bencana besar. Tapi jujur saja, nggak ada yang tahu pasti. Yang jelas, semua orang yang mencoba mencarinya jarang kembali untuk menceritakan kisah mereka."
       },
 
       {
         "id": 3,
-        "story": "Raja segera mengirim utusan untuk meminta bantuan dari kerajaan tetangga. Namun, malang tak dapat ditolak—kerajaan-kerajaan lain pun tengah sibuk menghadapi ancaman yang sama. Munculnya dungeon tak hanya menimpa Caldoria, melainkan seluruh dunia. Setiap kerajaan kini terjebak dalam perjuangan mereka masing-masing, menghadapi gelombang serangan dari monster-monster yang muncul dari perut bumi. Raja yang biasanya tenang kini mulai dirundung kegelisahan. Ia tahu, tanpa bantuan dari kerajaan tetangga, Caldoria tak mungkin bertahan lama."
+        "story": "Namun, dunia ini juga punya aturan aneh: saat keadaan semakin kacau, selalu saja ada satu orang yang merasa terpanggil untuk menyelamatkan semuanya. Dan kali ini, giliranmu."
       },
 
       {
         "id": 4,
-        "story": "Waktu terus berjalan, dan semakin banyak rakyat yang menjadi korban. Para prajurit kerajaan, yang jumlahnya sedikit dan kurang terlatih, tak mampu melindungi seluruh penjuru negeri. Harapan seolah menghilang dari langit Caldoria yang kini tampak suram."
+        "story": "Kau bukan siapa-siapa, setidaknya untuk sekarang. Seorang petualang biasa dengan pedang tumpul dan baju zirah yang lebih mirip kaleng penyok. Tapi suatu malam, saat kau bermimpi tentang tiga artefak itu—berkilau di tengah kegelapan—kau tahu bahwa hidupmu tidak akan pernah sama lagi."
       },
 
       {
         "id": 5,
-        "story": "Namun, pada suatu hari yang dingin, ketika kabut pagi belum sepenuhnya terangkat dari tanah, muncullah seorang pemuda di hadapan gerbang istana. Ia tak dikenal oleh siapa pun, bahkan namanya pun tak tercatat dalam daftar penduduk kerajaan. Namun, dari tatapannya, terbersit keberanian yang tak dimiliki oleh banyak orang. Tanpa banyak bicara, ia meminta untuk menghadap Raja."
+        "story": "Tanpa banyak penjelasan, mimpimu membawamu ke sebuah peta tua yang muncul entah dari mana. Peta itu menunjukkan tiga titik: tiga dungeon yang tersebar di seluruh dunia. Kau tidak tahu apa yang menunggumu di sana—perangkap, monster, atau mungkin kematian. Tapi satu hal yang pasti, perjalanan ini bukan soal menemukan artefak saja. Ini adalah perjalanan untuk menemukan siapa dirimu sebenarnya."
       },
 
       {
         "id": 6,
-        "story": "Raja menatap pemuda itu dengan ragu. Ia tak punya pilihan lain. Dengan berat hati, ia memberi restu kepada pemuda itu. Diberikanlah kepadanya sebuah jubah sederhana, bekal secukupnya, dan sebuah pedang tua yang sudah lama tak digunakan. Tak ada upacara, tak ada pidato besar, hanya keheningan yang menyelimuti langkah-langkah pemuda itu"
+        "story": "Di pagi yang biasa, dengan tas penuh perlengkapan seadanya dan tekad yang mungkin sedikit terlalu besar. Dunia menunggumu, meskipun sejujurnya, dunia juga tidak peduli. Tapi hei, setiap pahlawan besar juga harus mulai dari sesuatu yang kecil, kan?"
+      },
+
+      {
+        "id": 7,
+        "story": "Selamat datang di perjalananmu. Semoga kau selamat... atau setidaknya, semoga kau punya cerita yang bisa dikenang."
       }
     ],
     "after_dungeon_1_story": [
       {
-        "story": "Setelah melewati tantangan pertama di dungeon yang terletak di tepi hutan, sang pahlawan kembali ke Astronia dengan artefak pertama—Amulet Keberanian. Artefak kuno ini diyakini memiliki kekuatan untuk mengusir kegelapan dan meningkatkan semangat juang orang-orang di sekitarnya. Berita tentang kemenangannya menyebar dengan cepat, membawa harapan yang baru kepada rakyat Caldoria yang sebelumnya dilanda keputusasaan."
+        "story": "Langit mulai berubah warna menjadi ungu keemasan ketika kau melangkah keluar dari dungeon pertama. Di tanganmu, artefak itu berkilau lembut—bola kristal kecil dengan ukiran rumit yang tampak seperti mengalirkan cahaya dari dalam. Udara pagi terasa dingin, tapi tidak cukup untuk menghilangkan rasa puas setelah perjuangan panjang di dalam dungeon yang gelap dan penuh bahaya."
       },
 
       {
-        "story": "Kemenangan ini adalah awal dari harapan baru, namun bayangan dari dungeon-dungeon berikutnya tetap menghantui. Meski begitu, rakyat Caldoria mulai percaya bahwa dengan keberanian dan tekad, sang pahlawan mungkin benar-benar dapat menyelamatkan kerajaan mereka."
+        "story": "Di sana, di pinggir hutan, Elinor—pria tua berjubah compang-camping yang kau temui sebelumnya—sedang menunggumu sambil duduk di atas batu besar. Begitu melihatmu, dia berdiri dengan senyuman kecil. 'Kau berhasil,' katanya. 'Tapi perjalananmu baru dimulai.'"
       },
 
       {
-        "story": "Namun, tugas sang pahlawan belum selesai. Jauh di dalam dungeon kedua, tersembunyi artefak yang selama ini menjadi legenda—Crown of Light, mahkota cahaya yang konon memiliki kekuatan untuk menghapus menutup portal monster."
+        "story": "Dia mengeluarkan sebuah gulungan peta dari jubahnya dan menyerahkannya padamu. Peta itu menunjukkan lokasi dungeon kedua, tersembunyi di tengah hutan rimba yang luas. Tapi ini bukan dungeon biasa. Elinor menyebutnya Labirin Kegelapan—sebuah maze yang hidup, penuh ilusi, perangkap, dan makhluk penjaga yang dikenal kejam."
+      },
+
+      {
+        "story": "Perjalanan menuju hutan memakan waktu dua hari. Kau melewati desa-desa kecil yang semakin jarang penduduknya, hingga akhirnya hanya ada hamparan pohon-pohon tinggi yang membentuk dinding hijau tak berujung. Saat kau tiba di tepi hutan, udara terasa lebih berat. Angin yang biasanya membawa aroma dedaunan segar kini membawa bisikan-bisikan samar, seperti suara orang berbicara dari jauh."
+      },
+
+      {
+        "story": "Pintu masuk labirin tidak seperti yang kau bayangkan. Tidak ada gerbang besar atau patung penjaga. Hanya sebuah celah kecil di antara akar pohon raksasa yang menyembul dari tanah. Tapi saat kau melangkah lebih dekat, kau merasakan sesuatu yang aneh—seolah-olah tempat itu memperhatikanmu."
+      },
+
+      {
+        "story": "Dengan setiap langkah, napasmu semakin berat. Di depan, suara gemerisik perlahan berubah menjadi raungan makhluk yang jelas tak bersahabat. Ini belum selesai, dan tantangan ini baru saja dimulai. Labirin ini sedang menguji apakah kau benar-benar layak untuk melangkah lebih jauh."
       }
     ],
     "after_dungeon_2_story": [
       {
-        "story": "Setelah berhasil menaklukkan dungeon kedua yang tersembunyi di pegunungan tandus Caldoria, sang pahlawan kembali dengan membawa Crown of Light. Mahkota ini punya kekuatan khusus untuk mengusir kegelapan dan melindungi pemakainya dari sihir hitam. Tantangan kali ini terasa lebih berat dibandingkan dungeon pertama—dipenuhi jebakan yang rumit dan makhluk penjaga yang lebih buas."
+        "story": "Keluar dari Labirin Kegelapan terasa seperti menghirup napas pertama setelah sekian lama tenggelam di dasar lautan. Udara segar dan cahaya matahari yang menerobos kanopi pohon-pohon hutan seolah memeluk tubuhmu yang lelah. Di tanganmu, artefak kedua berpendar pelan. Kali ini bentuknya seperti lonceng kecil dari logam hitam, dengan suara lembut yang bergema setiap kali digoyangkan."
       },
 
       {
-        "story": "Namun, perjalanan belum selesai. Di dalam dungeon ketiga, tersembunyi artefak terakhir dan terkuat, yaitu Eclipse Blade—pedang legendaris yang telah lama hilang dan diyakini mampu memisahkan kegelapan dari cahaya. Senjata ini hanya dapat digunakan oleh mereka yang memiliki hati yang murni dan keteguhan yang kuat, serta bisa menyegel makhluk-makhluk jahat yang tak bisa dilawan dengan kekuatan biasa. Eclipse Blade dikabarkan memiliki kekuatan untuk menciptakan keseimbangan baru, menyegel kegelapan yang selama ini menghantui Caldoria dan membawa kedamaian abadi."
+        "story": "Labirin itu hampir saja membuatmu gila—lorong yang berubah, bisikan-bisikan yang mencoba mengelabui, dan makhluk penjaga dengan mata menyala yang terus menguntitmu. Tapi sekarang, kau sudah keluar. Kau berhasil. Dan untuk sesaat, dunia terasa damai."
       },
 
       {
-        "story": "Berbekal dua artefak yang telah ia amankan, serta dukungan tak tergoyahkan dari rakyatnya, sang pahlawan melangkah menuju kegelapan untuk menjemput Eclipse Blade. Di ujung perjalanan ini, nasib Caldoria akan ditentukan: apakah kegelapan akan disegel untuk selamanya atau justru menguasai segalanya."
+        "story": "Elinor kembali menunggumu di luar, duduk bersandar pada sebatang pohon besar. 'Kau lebih cepat dari yang kuduga,' katanya, suaranya terdengar puas. 'Artefak kedua sudah di tanganmu. Tapi perjalanan ini belum selesai.'"
+      },
+
+      {
+        "story": "Elinor berdiri perlahan, tubuh tuanya terlihat lebih rapuh dari sebelumnya. 'Dungeon ketiga adalah yang tersulit,' katanya sambil menyerahkan sebuah peta lain. Tapi kali ini, peta itu jauh lebih kosong dibanding sebelumnya, hanya menampilkan dua puncak gunung yang menjulang tinggi dan sebuah tanda di antaranya. 'Tempat itu disebut The Skyhold. Sebuah bangunan yang melayang di antara dua puncak gunung. Tak ada jalan biasa untuk mencapainya. Kau harus menyeberang jurang melalui jembatan rapuh yang hanya muncul saat bulan purnama.'"
+      },
+
+      {
+        "story": "Perjalanan menuju The Skyhold adalah ujian tersendiri. Kau melintasi lembah-lembah yang curam dan hutan-hutan lebat, mendaki jalan setapak yang semakin sulit hingga akhirnya tiba di kaki gunung. Dua puncak raksasa menjulang di depanmu, dengan angin dingin yang menyambar tajam."
+      },
+
+      {
+        "story": "Saat matahari terbenam, kau melihatnya—Skyhold. Sebuah bangunan kuno dengan menara-menara tinggi, melayang di antara kedua gunung, seolah menantang hukum alam. Dari tempatmu berdiri, itu tampak seperti ilusi, tapi kau tahu itu nyata."
+      },
+
+      {
+        "story": "Skyhold menantimu, dengan segala misteri dan bahaya yang tersembunyi di dalamnya. Tapi kau juga tahu bahwa akhir perjalanan ini semakin dekat. Satu artefak terakhir, satu ujian lagi. Dan setelah itu, rahasia dari ketiga artefak ini akhirnya akan terungkap."
       }
     ],
     "after_dungeon_3_story": [
       {
-        "story": "Setelah sang pahlawan menaklukkan dungeon ketiga, yang paling berbahaya dan tersembunyi di kedalaman hutan purba Caldoria, harapan baru muncul di seluruh kerajaan. Dengan mengalahkan penjaga terakhir dan merebut Eclipse Stone, sebuah artefak kuno yang menyatukan kekuatan cahaya dan kegelapan, sang pahlawan berhasil mengakhiri ancaman yang selama ini membayangi seluruh negeri."
+        "story": "Langit mulai memerah saat kau berdiri di tengah ruangan besar di Skyhold. Tanganmu menggenggam artefak terakhir—sebuah cincin emas besar dengan simbol-simbol kuno yang bersinar samar. Perjuangan di dungeon ini terasa seperti mimpi buruk yang nyaris tak berujung: penjaga bersayap yang melayang di lorong-lorong, teka-teki kompleks yang memaksa otakmu bekerja hingga batasnya, dan gravitasi aneh yang terus mencoba menjatuhkanmu ke jurang di bawah."
       },
       {
-        "story": "Dengan Eclipse Stone di tangan, sang pahlawan berdiri di puncak menara terakhir dungeon, menyaksikan kabut kegelapan yang perlahan menghilang dari seluruh kerajaan. Dengan setiap langkah keluar dari dungeon, seakan beban kegelapan terangkat, langit pun kembali cerah, dan burung-burung mulai berkicau menyambut fajar kemenangan. Seluruh Caldoria, yang dulu dicekam ketakutan, kini merasakan kebebasan. Warga berbondong-bondong menyambut sang pahlawan, melemparkan bunga dan menyanyikan lagu-lagu pujian yang menceritakan keberanian yang telah mengembalikan kedamaian."
+        "story": "Tapi sekarang kau berdiri di sini, napas tersengal-sengal, tubuh penuh luka, tapi dengan tiga artefak di tanganmu. Di depanmu ada altar kuno, dihiasi dengan ukiran-ukiran yang tampak menceritakan kisah masa lalu yang sudah lama terlupakan. Perlahan, kau meletakkan ketiga artefak itu di tempat yang sesuai—bola kristal dari dungeon pertama, lonceng hitam dari yang kedua, dan cincin emas dari Skyhold."
       },
       {
-        "story": "Setelah hari-hari gelap berlalu, kehidupan di Caldoria kembali seperti sediakala. Tetapi, bagi sang pahlawan, kedamaian membawa tantangan baru: membangun kembali kehidupannya yang lama setelah petualangan penuh bahaya. Ia diberi gelar kehormatan dan tanah sebagai hadiah dari kerajaan, namun kesederhanaan dan keteguhan hatinya mendorongnya untuk hidup di desa kecil yang dikelilingi oleh alam, jauh dari hiruk-pikuk politik dan kota."
+        "story": "Saat kau memasang artefak terakhir, altar itu mulai bergetar, dan cahaya menyilaukan meledak dari tempat mereka bergabung. Suara seperti raungan guntur memenuhi ruangan, membuatmu hampir jatuh. Tiba-tiba, cahaya itu berkumpul di satu titik dan berubah menjadi sebuah objek baru: sebuah tongkat kayu kuno dengan batu kristal besar di ujungnya."
       },
       {
-        "story": "Legenda tentang pahlawan ini menyebar hingga ke kerajaan-kerajaan lain, dan banyak petualang muda yang mencari inspirasi darinya. Kadang-kadang, pahlawan ini akan menerima tamu—muda-mudi yang mendengar kisahnya dan ingin belajar tentang keberanian, kesetiaan, dan kedamaian sejati."
+        "story": "Namun, sebelum kau bisa menyentuhnya, suara langkah pelan terdengar dari belakang. Kau berbalik dan melihat Elinor, pria tua berjubah compang-camping itu, berdiri di pintu ruangan. Tapi kali ini, dia tidak tampak seperti pengemis biasa. Jubahnya bersih dan bercahaya, matanya memancarkan kekuatan yang jauh lebih besar dari yang kau kira."
+      },
+
+      {
+        "story": "Elinor tersenyum kecil, penuh misteri. 'Tongkat itu adalah kunci untuk mengembalikan keseimbangan dunia ini. Tapi keseimbangan selalu datang dengan harga. Kau bisa menggunakannya untuk menghentikan kekacauan yang perlahan merusak dunia... atau kau bisa menyimpannya untuk dirimu sendiri, memberimu kekuatan yang tak terbayangkan. Pilihannya ada di tanganmu.'"
+      }, 
+
+      {
+        "story": "Dengan tangan yang masih gemetar, kau mengangkat tongkat itu dan mengarahkan kekuatannya ke langit. Cahaya besar meledak keluar, meliputi dunia di sekitarmu. Suara angin dan guntur menggema, dan seolah-olah seluruh alam merespons panggilan itu."
+      },
+
+      {
+        "story": "Ketika cahaya mereda, kau tersungkur ke tanah, tubuhmu terasa seolah ditarik oleh gravitasi yang mendadak menjadi lebih berat. Jantungmu berdegup kencang, napasmu terengah-engah. Dunia di sekitarmu terlihat kabur oleh sisa-sisa kilatan cahaya, tapi kau bisa merasakan perubahan yang halus namun nyata."
+      },
+
+      {
+        "story": "Udara yang tadi terasa berat kini terasa segar, seolah-olah bumi baru saja menghela napas panjang setelah menahan dirinya terlalu lama. Angin lembut bertiup, membawa aroma rerumputan basah dan hujan yang akan segera turun. Tapi kau tetap di sana, duduk di lantai dingin Skyhold, memandangi tongkat di tanganmu yang mulai retak perlahan."
+      },
+
+      {
+        "story": "Kau tahu apa yang akan terjadi. Tongkat itu tidak diciptakan untuk bertahan setelah tugasnya selesai. Pelan-pelan, kayu kunonya berubah menjadi serpihan kecil, lalu menjadi debu halus yang terbang bersama angin. Kau hanya bisa memandanginya, perasaan lega bercampur kehilangan mengisi dadamu."
+      },
+
+      {
+        "story": "Elinor, yang berdiri tidak jauh darimu, hanya menatapmu dengan pandangan yang sulit dijelaskan. Ada rasa bangga, tapi juga kesedihan di wajahnya. 'Ya,' katanya dengan suara pelan. 'Tapi kau tahu, setiap akhir membawa awal yang baru. Dunia ini akan melupakan tongkat itu, melupakan kita. Tapi itu bukan hal yang buruk. Dunia tidak butuh pahlawan yang terus dikenang—ia butuh kesempatan untuk memulai lagi.'"
+      },
+
+      {
+        "story": "Kata-kata itu menempel di pikiranmu saat kau berjalan keluar dari Skyhold, menyeberangi jembatan cahaya yang mulai memudar di bawah kakimu. Angin dingin gunung menerpa wajahmu, dan untuk pertama kalinya, kau merasa ringan. Tidak ada artefak untuk dijaga, tidak ada tugas berat yang menunggumu. Hanya kau, seorang petualang biasa yang telah melakukan perjalanan yang luar biasa."
       }
     ],
     "dungeons": [
@@ -232,7 +293,7 @@
           "text": "We passed by a market ___ economy was in full swing",
           "choices": ["who", "which", "whom", "whose"],
           "correct_answer": "whose",
-          "explanation": "whose itu menunjukkan kepemilikan(-nya). 'Kita lewat pasar yang ekonomiNYA...' Who itu sebelumnya harus subject manusia dan setelahnya harus verb, which itu mirip dengan who, cuman subjectnya itu benda, whom itu setelahnya diikuti pronoun"
+          "explanation": "whose itu menunjukkan kepemilikan(-nya). 'Kita lewat pasar yang ekonomiNYA...' Who itu sebelumnya harus subject orang dan setelahnya harus verb. Contoh: 'The student who sits in the back of the room is sleeping'. Which itu mirip dengan who, cuman subjectnya itu benda dan bisa diikuti pronoun. Contoh: 'This is the hypothesis which I tested yesterday' atau 'I have a rabbit which always eats strange food'. Whom itu setelahnya diikuti pronoun. Contoh: 'Yesterday I met a girl whom I have been looking for the past two years'"
         },
 
         {
@@ -244,7 +305,7 @@
             "wouldn't have been scolded / were to study"
           ],
           "correct_answer": "wouldn't be scolded / had studied",
-          "explanation": "Ini mixed conditional. Salah satu fiturnya adalah kondisi masa lalu memengaruhi hasil masa sekarang. Berdasar konteks di atas si pelaku dimarahi, terus dia bilang, 'gue nggak akan dimarahi kalo seminggu yang lalu gue belajar. Jadi, tindakan di masa lalu = tidak belajar memengaruhi hasil di masa sekarang = dimarahi'"
+          "explanation": "Ini mixed conditional. Salah satu fiturnya adalah kondisi masa lalu memengaruhi hasil masa sekarang. Berdasar konteks di atas si pelaku dimarahi, terus dia bilang, 'gue nggak akan dimarahi kalo seminggu yang lalu gue belajar. Jadi, tindakan di masa lalu = tidak belajar, memengaruhi hasil di masa sekarang = dimarahi'"
         },
 
         {
@@ -258,7 +319,7 @@
           "text": "There are five dogs in the field. One of __ is really fluffy",
           "choices": ["whom", "who", "which", "it"],
           "correct_answer": "which",
-          "explanation": "kenapa which? karena dia merujuk pada anjing dan anjing itu hewan. Kalau pake whom itu rujukannya harus manusia"
+          "explanation": "kenapa which? karena dia merujuk pada anjing dan anjing itu hewan. Kalau pake whom itu rujukannya harus orang"
         },
 
         {
@@ -297,7 +358,7 @@
             "comes Binder"
           ],
           "correct_answer": "comes Binder",
-          "explanation": "wlewleo"
+          "explanation": "Kalimat di atas adalah inversion. Sebenarnya, kalimatnya mau bilang, 'Binder comes out of the final corner, tapi kata kerja dipindah ke depan subject dan keduanya dipindah paling belakang. Contoh yang lain seperti: 'Never have I ever done that' atau 'Here comes the reigning world champion!'. Kalau pake negative adverbs, maka akan diinvert/dibalik, contoh: never, seldom, rarely, etc. Ada juga yang depannya pake 'not' terus diikuti prepositional phrase atau clause. Contoh: 'not until I got home did I realize my phone was missing' "
         },
 
         {
@@ -309,7 +370,7 @@
             "for practice"
           ],
           "correct_answer": "a written excuse",
-          "explanation": "wlewleo"
+          "explanation": "Dangling modifier. Kalimat di atas agak membingungkan. Tiba-tiba datang telat terus perlu alasan tertulis, tapi siapa yang dateng telat? Kan bukan si 'a written excuse' kan? Kalimat benernya begini: Having arrived late for practice, Johhny needed a written excuse. Kesalahan di dangling modifier itu terletak siapa pelakunya. Contoh lainnya: 'After reading an article, the news remains unconvincing = After reading an article, I find the news unconvincing'"
         },
 
         {
@@ -328,14 +389,14 @@
           "text": "Either of the restaurants ___ cheap enough for us to afford",
           "choices": ["are", "is"],
           "correct_answer": "is",
-          "explanation": "wlewleo"
+          "explanation": "Either di sini merujuk ke salah satu restoran. Mau resto A atau B, yang mana sama-sama singular, tetep aja murah."
         },
 
         {
           "text": "Neither the manager nor the riders ___ to race in Valencia",
           "choices": ["agree", "agrees", "are agree", "is agree"],
           "correct_answer": "agree",
-          "explanation": "wlewleo"
+          "explanation": "Neither di sini mengikuti rules of proximity, jadi yang kata benda terdekat akan memengaruhi agreement kata kerjanya. Karena 'the riders' itu plural, maka kata kerja juga bentuk plural"
         },
 
         {
@@ -347,11 +408,11 @@
             "of grasping / less than"
           ],
           "correct_answer": "grasping / greater than",
-          "explanation": "wlewleo"
+          "explanation": "Setelah difficulty itu diikuti bentuk -ing, sedangkan 'greater than' ini mengikuti konteks = anak-anak kesulitan memahami angka YANG LEBIH BESAR dari angka dua..."
         },
 
         {
-          "text": "The healthy individual possesses means of arresting minor haemorrhages; if this ___ so trivial cuts ___ to a fatal loss of blood.",
+          "text": "The healthy individual possesses means of arresting minor haemorrhages; if this ___ so trivial, cuts ___ to a fatal loss of blood.",
           "choices": [
             "was not / have led",
             "were not / would lead",
@@ -359,14 +420,14 @@
             "would not be / had led"
           ],
           "correct_answer": "were not / would lead",
-          "explanation": "wlewleo"
+          "explanation": "Conditional type 2. Kalimat pertama itu berisi statement fakta, sedangkan if di sini melakukan pengandaian terhadap fakta tersebut"
         },
 
         {
           "text": "Marquez has set the fastest lap in this race! ___ Iannone",
           "choices": ["so does", "so is", "as has", "as does"],
           "correct_answer": "as has",
-          "explanation": "wlewleo"
+          "explanation": "Pernah denger: So does he, so did she, etc? Contoh: 'John goes to the party, so does Van'. Nah sama seperti itu, tapi yang ini lebih formal dengan menggunakan as has/does/did/have/will. Contoh lain: 'Dani has eaten a  lot of food already, as has Sophie'"
         },
 
         {
@@ -378,7 +439,7 @@
             "try as he may"
           ],
           "correct_answer": "try as he may",
-          "explanation": "wlewleo"
+          "explanation": "Merupakan phrase yang berarti: 'no matter how hard one tries'"
         },
 
         {
@@ -390,7 +451,7 @@
             "will leave"
           ],
           "correct_answer": "will have left",
-          "explanation": "wlewleo"
+          "explanation": "Future perfect tense. Jadi, pas minggu depan si sara udah nggak ada lagi di rumah sakit. Bukan pas minggu depan baru ninggalin rumah sakit atau sedang ninggalin rumah sakit, tapi pas minggu depan udah nggak ada yang mana sebelum minggu depan, si sara udah keluar rumah sakit, so pas minggu depan, asumsi hari Senin, dia udah ndak ada lagi di rumah sakit karena beberapa hari sebelumnya udah keluar duluan"
         }
       ]
     },
