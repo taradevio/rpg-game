@@ -5,7 +5,7 @@ export default defineConfig(() => {
   return {
     plugins: [
       ViteImageOptimizer({
-       jpg: 40
+       jpg: 50
       }),
     ],
   };

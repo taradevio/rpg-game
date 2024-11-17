@@ -3,10 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "engines": {
-    "node": ">=18.0.0",
-    "bun": ">=1.0.0"
-  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,16 +10,11 @@
   },
   "devDependencies": {
     "sass-embedded": "^1.80.4",
-    "vite": "^5.4.9",
-    "@types/bun": "latest"
+    "vite": "^5.4.9"
   },
   "dependencies": {
     "sharp": "^0.33.5",
     "svgo": "^3.3.2",
     "vite-plugin-image-optimizer": "^1.1.8"
-  },
-  "module": "index.ts",
-  "peerDependencies": {
-    "typescript": "^5.0.0"
   }
 }
