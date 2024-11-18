@@ -192,6 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
       .join("");
     quizSection.innerHTML = singleQuestion;
 
+    preventReload();
     // use queryselectorall to select all the answers button and use foreach to dynamically assign eventlistener to each button, so that the indexing works
     document.querySelectorAll(".answer").forEach((answerBtn) => {
       answerBtn.addEventListener("click", () => {
@@ -205,6 +206,7 @@ document.addEventListener("DOMContentLoaded", () => {
           currentQuizQuestions++;
           currentQuizAnswers++;
           currentCorrectAnswers++;
+
           if (
             currentQuizQuestions &&
             currentQuizAnswers >= contents.story.questions.level_1.length
@@ -305,6 +307,7 @@ document.addEventListener("DOMContentLoaded", () => {
           currentQuizQuestions++;
           currentQuizAnswers++;
           currentCorrectAnswers++;
+
           if (
             currentQuizQuestions &&
             currentQuizAnswers >= contents.story.questions.level_2.length
@@ -405,6 +408,7 @@ document.addEventListener("DOMContentLoaded", () => {
           currentQuizQuestions++;
           currentQuizAnswers++;
           currentCorrectAnswers++;
+
           if (
             currentQuizQuestions &&
             currentQuizAnswers >= contents.story.questions.level_3.length
@@ -803,6 +807,12 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       afterStoryDungeon3();
+    });
+  }
+
+  function preventReload() {
+    window.addEventListener("beforeunload", (event) => {
+      event.preventDefault();
     });
   }
 
