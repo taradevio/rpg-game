@@ -4,7 +4,7 @@
     "prologue": [
       {
         "id": 1,
-        "story": "Di sebuah dunia yang belum bernama—atau mungkin pernah dinamai tapi sudah dilupakan—terbentang dataran luas penuh keajaiban dan bahaya. Dunia ini memiliki semua yang kau bayangkan: pegunungan berkabut yang memeluk langit, hutan purba yang lebih tua dari legenda, dan reruntuhan kuno yang tak pernah kehilangan misterinya. Tapi yang membuat dunia ini berbeda dari dongeng lainnya adalah tiga artefak."
+        "story": "Di sebuah dunia tanpa nama—atau mungkin pernah bernama, tapi sudah dilupakan—terbentang dataran luas penuh keajaiban dan bahaya. Dunia ini memiliki semua yang kau bayangkan: pegunungan berkabut yang memeluk langit, hutan purba yang lebih tua dari legenda, dan reruntuhan kuno yang tak pernah kehilangan misterinya. Tapi yang membuat dunia ini berbeda dari dongeng lainnya adalah tiga artefak."
       },
 
       {
@@ -19,12 +19,12 @@
 
       {
         "id": 4,
-        "story": "Kau bukan siapa-siapa, setidaknya untuk sekarang. Seorang petualang biasa dengan pedang tumpul dan baju zirah yang lebih mirip kaleng penyok. Tapi suatu malam, saat kau bermimpi tentang tiga artefak itu—berkilau di tengah kegelapan—kau tahu bahwa hidupmu tidak akan pernah sama lagi."
+        "story": "Kau bukan siapa-siapa, setidaknya untuk sekarang. Seorang petualang biasa dengan pedang tumpul dan baju zirah yang penuh goresan sana-sini. Tapi suatu malam, saat kau bermimpi tentang tiga artefak itu—berkilau di tengah kegelapan—kau tahu bahwa hidupmu tidak akan pernah sama lagi."
       },
 
       {
         "id": 5,
-        "story": "Tanpa banyak penjelasan, mimpimu membawamu ke sebuah peta tua yang muncul entah dari mana. Peta itu menunjukkan tiga titik: tiga dungeon yang tersebar di seluruh dunia. Kau tidak tahu apa yang menunggumu di sana—perangkap, monster, atau mungkin kematian. Tapi satu hal yang pasti, perjalanan ini bukan soal menemukan artefak saja. Ini adalah perjalanan untuk menemukan siapa dirimu sebenarnya."
+        "story": "Tanpa banyak penjelasan, mimpimu membawamu ke sebuah peta tua yang muncul entah dari mana. Peta itu menunjukkan tiga titik: tiga dungeon yang tersebar di seluruh dunia. Kau tidak tahu apa yang menunggumu di sana—perangkap, monster, atau mungkin kematian. Tapi satu hal yang pasti, perjalanan ini bukan soal menemukan artefak saja. Ini adalah perjalanan untuk menemukan harapan dan membawanya kembali"
       },
 
       {
@@ -43,7 +43,7 @@
       },
 
       {
-        "story": "Di sana, di pinggir hutan, Elinor—pria tua berjubah compang-camping yang kau temui sebelumnya—sedang menunggumu sambil duduk di atas batu besar. Begitu melihatmu, dia berdiri dengan senyuman kecil. 'Kau berhasil,' katanya. 'Tapi perjalananmu baru dimulai.'"
+        "story": "Di sana, di pinggir hutan, Elinor—pria tua berjubah compang-camping yang misterius—sedang menunggumu sambil duduk di atas batu besar. Begitu melihatmu, dia berdiri dengan senyuman kecil. 'Kau berhasil,' katanya. 'Tapi perjalananmu baru dimulai.'"
       },
 
       {
@@ -374,15 +374,15 @@
         },
 
         {
-          "text": "Alonso seems ___ a tumble at turn five",
+          "text": "Alonso's plan seems to have failed and now he's taken a tumble! Things have gone ___ for him",
           "choices": [
-            "to have taken",
-            "to take",
-            "to have been taking",
-            "to be taking"
+            "south",
+            "north",
+            "east",
+            "west"
           ],
           "correct_answer": "to have taken",
-          "explanation": "wlewleo"
+          "explanation": "to go south artinya suatu hal/kondisi menjadi lebih buruk"
         },
 
         {
