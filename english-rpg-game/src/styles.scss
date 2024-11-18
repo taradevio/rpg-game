@@ -267,7 +267,7 @@ $big-layout: 850px;
         .background {
           display: block;
           filter: brightness(65%);
-          height: 100vh;
+          height: 100dvh;
           max-width: 100%;
           object-fit: cover;
         }
@@ -397,6 +397,7 @@ $big-layout: 850px;
 
 @media (min-width: $small-layout) and (max-width: $medium-layout) {
   #app {
+    height: 100dvh;
     .main-menu,
     .main-story,
     .first-dungeon,
@@ -544,6 +545,7 @@ $big-layout: 850px;
 
 @media (min-width: $medium-layout) and (max-width: 849px) {
   #app {
+    height: 100dvh;
     .main-menu,
     .main-story,
     .first-dungeon,
