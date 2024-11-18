@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const response = await fetch("/content.json", {
       method: 'GET',
       headers: {
-        Accept: 'application/json',
+        'Content-Type': 'application/json',
       }
     });
     const contents = await response.json();
