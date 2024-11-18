@@ -251,47 +251,54 @@ $big-layout: 850px;
 
 @media (min-width: $very-small-layout) and (max-width: $small-layout) {
   #app {
+    height: 100dvh;
     .main-menu,
     .main-story,
     .first-dungeon,
     .quiz-container {
       .opening-text {
-        width: 50ch;
+        width: 100%;
         top: 55%;
         left: 50%;
         transform: translate(-50%, -50%);
+      }
 
-
-        .getter {
-          font-size: 1.5rem;
+      .img-bg {
+        .background {
+          display: block;
+          filter: brightness(65%);
+          height: 100vh;
+          max-width: 100%;
+          object-fit: cover;
         }
       }
 
       .prologue,
       .opening-dungeon,
       .lose-page {
-        width: 75ch;
+        width: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         .text-prologue {
-          font-size: 1.3rem;
-          padding-inline: 0.6rem;
+          margin-inline: 1rem;
+          font-size: 1.4rem;
+          text-align: justify;
+          line-height: 1.35;
         }
 
         h1 {
           font-size: 2.5rem;
         }
 
+        .lose-desc,
         .quote {
-          text-align: center;
-          padding-block: 0.5rem;
-        }
-
-        .lose-desc {
-          font-size: 1.2rem;
-          padding-inline: 0.6rem;
+          margin-inline: 1rem;
+          margin-top: 2rem;
+          font-size: 1.5rem;
+          line-height: 1.3;
+          text-align: justify;
         }
       }
 
@@ -303,7 +310,7 @@ $big-layout: 850px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 1rem 16em;
+        padding: 1rem 1em;
         position: absolute;
         top: 0;
         left: 0;
@@ -315,7 +322,7 @@ $big-layout: 850px;
       }
 
       .quiz {
-        width: 50%;
+        width: 100%;
         text-align: center;
         position: absolute;
         z-index: 1;
@@ -323,7 +330,7 @@ $big-layout: 850px;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $font-color;
-        padding-inline: 2.5rem;
+        padding-inline: 1rem;
 
         .multiple-choices {
           width: 100%;
@@ -335,7 +342,7 @@ $big-layout: 850px;
       }
 
       .review-page {
-        width: 75ch;
+        width: 100%;
         align-content: center;
         text-align: center;
         position: absolute;
@@ -344,8 +351,8 @@ $big-layout: 850px;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $font-color;
-        overflow-y: scroll;
-        height: 100vh;
+        overflow: auto;
+        // height: 100vh;
 
         .explanation {
           width: 350px;
@@ -395,36 +402,45 @@ $big-layout: 850px;
     .first-dungeon,
     .quiz-container {
       .opening-text {
-        width: 50ch;
+        width: 100%;
 
         .getter {
           font-size: 1.5rem;
         }
       }
 
+      .img-bg {
+        .background {
+          max-width: 100%;
+        }
+      }
+
       .prologue,
       .opening-dungeon,
       .lose-page {
-        width: 78ch;
+        width: 100%;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
 
         .text-prologue {
-          font-size: 1.4rem;
+          margin-inline: 1rem;
+          font-size: 1.6rem;
+          text-align: justify;
+          line-height: 1.35;
         }
 
         h1 {
           font-size: 2.5rem;
         }
 
+        .lose-desc,
         .quote {
-          text-align: center;
-          padding-block: 0.5rem;
-        }
-
-        .lose-desc {
-          font-size: 1.3rem;
+          margin-inline: 1rem;
+          margin-top: 2rem;
+          font-size: 1.5rem;
+          line-height: 1.3;
+          text-align: justify;
         }
       }
 
@@ -436,7 +452,7 @@ $big-layout: 850px;
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding: 1rem 14.5em;
+        padding: 1rem 1em;
         position: absolute;
         top: 0;
         left: 0;
@@ -448,13 +464,13 @@ $big-layout: 850px;
       }
 
       .quiz {
-        width: 50%;
+        width: 100%;
         text-align: center;
         position: absolute;
         z-index: 1;
-        top: 55%;
-        left: 55%;
-        transform: translate(-60%, -50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         color: $font-color;
         padding-inline: 1rem;
         font-size: 1.1rem;
@@ -470,7 +486,7 @@ $big-layout: 850px;
       }
 
       .review-page {
-        width: 55ch;
+        width: 100%;
         align-content: center;
         text-align: center;
         position: absolute;
