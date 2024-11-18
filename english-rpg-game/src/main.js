@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <img src="${backgroundMain}" alt="kingdom" class="background"> 
       </div>
       <div class="opening-text">
-        <p class="getter">Apakah kamu yang terpilih untuk menyelamatkan kerajaan?</p>
+        <p class="getter">Apakah engkau yang terpilih untuk membawa harapan baru?</p>
         <button class="play-btn">MAIN</button>
       </div>
     </div>
