@@ -461,11 +461,23 @@
         "description_title": "The hero has fallen",
         "description": [
           {
-            "par": "Dan begitulah akhirnya. Takdir yang selama ini mengiringi setiap langkah sang pahlawan perlahan memudar dalam kegelapan yang pekat. Setelah sekian banyak harapan yang ditaruh di pundaknya, sang pahlawan kini terbaring tak berdaya di dasar dungeon, di tengah reruntuhan penjara kuno yang selama ini menjadi saksi bisu kejatuhan banyak jiwa pemberani. Angin dingin berhembus lemah di dalam ruang bawah tanah yang berbau kematian. Cahaya dari obor-obor yang redup berkedip seperti enggan menyaksikan akhir dari seorang yang pernah dianggap sebagai penyelamat kerajaan"
+            "par": "Lorong dungeon terasa dingin dan sunyi, hanya dipecahkan oleh suara napasmu yang berat dan gema langkahmu di dinding batu. Tubuhmu sudah mencapai batasnya—penuh luka, tenagamu hampir habis, dan pedang di tanganmu terasa lebih seperti beban daripada senjata. Namun, kau terus melangkah, tidak karena keberanian, tetapi karena tidak ada pilihan lain."
           },
 
           {
-            "par": "Caldoria telah menemui nasibnya.Tanpa pahlawan, tanpa harapan, perlahan tenggelam dalam keputusasaan. Dan dunia terus berjalan tanpa adanya cahaya."
+            "par": "Rasa sakit itu luar biasa. Tubuhmu terlempar, dan kau terjatuh ke lantai batu yang keras. Pandanganmu mulai kabur, dunia di sekitarmu berubah menjadi bayangan yang gelap dan samar. Pedangmu terlepas dari genggamanmu, jatuh dengan suara berdering yang memantul di lorong sunyi."
+          },
+
+          {
+            "par": "Dalam detik-detik terakhir, kau memandang ke langit-langit dungeon yang tinggi. Cahaya dari obor yang redup terlihat seperti bintang terakhir di malam yang gelap. Lalu semuanya menjadi hening."
+          },
+
+          {
+            "par": "Di tempat yang jauh, di dalam dungeon yang sama, tubuhmu tetap di sana, menjadi bagian dari sejarah yang tidak akan diceritakan oleh siapa pun. Tapi pada suatu hari, mungkin bertahun-tahun kemudian, seorang petualang lain akan melangkah ke dalam dungeon itu. Mereka akan menemukan jejakmu—pedangmu yang tergeletak, bekas pertempuranmu di dinding batu."
+          },
+
+          {
+            "par": "Tidak semua orang dikenang. Tapi keberanian mereka selalu meninggalkan jejak, meski hanya dalam keheningan."
           }
         ],
         "quotes": [
