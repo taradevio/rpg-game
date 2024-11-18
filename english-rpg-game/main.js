@@ -118,14 +118,18 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   async function getData() {
-    const response = await fetch("content.json", {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json',
+    let contents;
+    try {
+      const response = await fetch("/content.json");
+
+      if(!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
       }
-    });
-    const contents = await response.json();
-    console.log(contents);
+       contents = await response.json();
+      console.log(contents);
+    } catch(error) {
+      console.error("Fetch error:", error)
+    }
 
     function mainMenu() {
       const mainMenu = generateMainMenu(contents.story.background);
