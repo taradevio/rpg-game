@@ -82,8 +82,8 @@ button {
       position: absolute;
       z-index: 1;
       top: 55%;
-      left: 55%;
-      transform: translate(-55%, -55%);
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: $font-color;
 
       .text-prologue {
@@ -132,7 +132,7 @@ button {
       text-align: center;
       position: absolute;
       z-index: 1;
-      top: 50%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: $font-color;
