@@ -132,9 +132,9 @@ button {
       text-align: center;
       position: absolute;
       z-index: 1;
-      top: 65%;
-      left: 65%;
-      transform: translate(-65%, -65%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: $font-color;
 
       .title {
@@ -192,23 +192,23 @@ button {
     }
 
     .review-page {
-      width: 85ch;
+      width: 100%;
       align-content: center;
       text-align: center;
       position: absolute;
       z-index: 1;
-      top: 65%;
-      left: 65%;
-      transform: translate(-65%, -65%);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       color: $font-color;
       overflow-y: scroll;
       height: 100vh;
 
       .explanation {
-        // border: 2px solid red;
         width: 550px;
         text-align: justify;
         margin: 0 auto;
+        margin-top: 2rem;
 
         details {
           padding: 0.3rem 0;
@@ -217,12 +217,23 @@ button {
           background-color: rgb(145, 142, 142);
           margin-block: 0.8rem;
           font-size: 1rem;
-
+          hyphens: auto;
           summary {
             margin-block: 0.5rem;
             cursor: pointer;
           }
+
+          .explanation-content-wrapper {
+            display: none;
+          }
+
+          &[open] .explanation-content-wrapper {
+            max-height: 300px;
+            overflow-y: scroll;
+            display: block;
+          }
         }
+
 
         .explanation-content-wrapper {
           margin-inline: 0.5rem;
@@ -241,6 +252,10 @@ button {
             line-height: 1.75;
           }
         }
+
+        .explanation-content-wrapper::-webkit-scrollbar {
+          display: none;
+        }
       }
 
       .next-story {
@@ -258,7 +273,6 @@ button {
 
     .review-page::-webkit-scrollbar {
       display: none;
-      width: 500px;
     }
   }
 }
@@ -373,18 +387,17 @@ button {
 
         .explanation {
           width: 350px;
+          margin-top: 2rem;
           text-align: justify;
 
           details {
             padding: 0.2rem 0;
             padding-inline: 0.8rem;
-            margin-block: 0.8rem;
             font-size: 1.2rem;
             line-height: 1.3;
             hyphens: auto;
 
             summary {
-              margin-block: 0.3rem;
               cursor: pointer;
             }
 
@@ -692,9 +705,11 @@ button {
         height: 100vh;
 
         .explanation {
+          // border: 2px solid red;
           width: 580px;
           text-align: justify;
           margin: 0 auto;
+          margin-top: 2.3rem;
 
           details {
             padding: 0.5rem 0;
