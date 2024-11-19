@@ -685,10 +685,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="explanation">
             <details>
               <summary>${item.text}</summary>
-            <div>
+            <div class="explanation-content-wrapper">
               <h3>${item.correct_answer}</h3>
-              <p>Penjelasan:</p>
-              <p>${item.explanation}</p>
+              <p class="explanation-content-title">Penjelasan:</p>
+              <p class="explanation-content">${item.explanation}</p>
             </div>
             </details>
           </div>
@@ -718,10 +718,10 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="explanation">
             <details>
               <summary>${item.text}</summary>
-            <div>
+            <div class="explanation-content-wrapper">
               <h3>${item.correct_answer}</h3>
-              <p>Penjelasan:</p>
-              <p>${item.explanation}</p>
+              <p class="explanation-content-title">Penjelasan:</p>
+              <p class="explanation-content">${item.explanation}</p>
             </div>
             </details>
           </div>
@@ -804,6 +804,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (goodEnding >= contents.story.after_dungeon_3_story.length) {
         alert("Congrats! You have won the game!");
+        currentPrologueIndex = 0;
+        currentAfterStoryDungeon1 = 0;
+        currentAfterStoryDungeon2 = 0;
+        goodEnding = 0;
+        currentQuizQuestions = 0;
+        currentQuizAnswers = 0;
+        currentCorrectAnswers = 0;
+        loseConditionIndex = 0;
+        gameOver = false;
+        remainingLives = 3;
+        setTimeout(() => {
+          mainMenu();
+        }, 1000)
       }
 
       afterStoryDungeon3();
