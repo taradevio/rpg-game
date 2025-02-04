@@ -1,7 +1,7 @@
 # Order of The Wild: Lingo
 
 ## Background
-This project was created as one of my ways to contribute back to society, especially in English. I could not not a fitting and simple idea to share my knowledge, then this project idea came to life. It was inspired by *menfess* English community on Twitter that had me thinking if I could create an alternative to create a simple English website with an engaging experience. Since I had been interested in RPG game, I was thinking if I could incorporate some of its mechanisms into my website
+This project was created as one of my ways to contribute back to society, especially in English. I could not find a fitting and simple idea to share my knowledge, then this project idea came to life. It was inspired by *menfess* English community on Twitter that had me thinking if I could create an alternative to create a simple English website with an engaging experience. Since I had been interested in RPG game, I was thinking if I could incorporate some of its mechanisms into my website
 
 ## Problems
 Creating this project was theoretically straightforward. However, it doesn't mean that there were no problems faced. Some of which are:
