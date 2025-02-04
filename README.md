@@ -14,4 +14,4 @@ Some solutions I worked on:
 - Created simple fantasy stories to keep the users engaged
 - Utilized immutable variable to unbound each variable from conflicting with different scenarios which would cause bugs
 
-These solutions may not be the best ones, but these could still be improved later on in the future and perhaps adding more features, such as new stories, new type of English questions, and even choices!
+These solutions may not be the best ones, but these could still be improved later on in the future and perhaps adding more features, such as new stories, new type of English questions, and even choices would not be ruled out at all!
